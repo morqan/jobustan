@@ -1,0 +1,184 @@
+
+.career{
+
+    &__triangle{
+        width: 0;
+        height: 0;
+        border-top: 75px solid $color-gray;
+        border-left: 99px solid transparent;
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        &::after{
+            content:'';
+            position:absolute;
+            top: -74px;
+            left: -96px;
+            width: 0;
+            height: 0;
+            border-top: 72px solid white;
+            border-left: 95px solid transparent;
+        }
+    }
+
+    &__triangleText{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 1.3rem;
+        transform: rotate(38deg);
+        color: $color-gray;
+    }
+
+    &__carousel{
+        &--item{
+            background-image:linear-gradient(rgba(180, 13, 74,.3), rgba(180, 13, 74,.3)), url(../../images/career-rek.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 17rem;
+            position: relative;
+            // background-color: rgb(180, 13, 74);
+            &-detail{
+                position: absolute;
+                bottom: 3rem;
+                right: 2rem;
+                text-align: right;
+                h2{
+                    color: $color-white;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+    &__card{
+              
+        margin-bottom: 3rem;
+        transition: all .2s ease-in-out;
+        box-shadow: 0px 10px 8.7px 1.3px rgba(166, 166, 166, 0.15);
+        border-radius: 1rem;
+        overflow: hidden;
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+        &--premium{
+            // border: 1px solid $color-primary-dark;  
+            box-shadow: 0px 10px 8.7px 1.3px rgba(180,13,74, 0.15);
+            &:hover{
+                box-shadow: 0 14px 28px rgba(180,13,74,.25), 0 10px 10px rgba(180,13,74,.22);
+            }
+        }
+    }
+
+  
+    
+    &__header{
+        // border-bottom: 1px solid $color-gray;
+            text-align: center;
+        img{
+            width: 75%;
+        }
+      
+        &--premium{
+        // border-bottom: 1px solid $color-primary-dark;
+        }
+    }
+    &__content{
+        padding: 2rem 1.5rem;
+        font-family: Comfortaa-b;
+        a{
+            margin-bottom: 3rem;
+            display: inline-block;
+            font-size: 1.7rem;
+        }
+        &--premium{
+            background-color: $color-primary-dark;
+            color: $color-white;
+        }
+    }
+
+    &__close{
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        color: $color-primary-dark;
+        cursor: pointer;
+    }
+
+    &__image{
+        width: 100%;
+    }
+
+    &__name{
+        font-size: 1.7rem;
+        text-transform: capitalize;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: $color-gray;
+        max-width:22rem;
+        &--white{
+            color: $color-white;
+        }
+
+        @include respond(phone){
+            font-size: 2.2rem;
+            margin-bottom: 6rem;
+        }
+
+        @include respond(tab-port){
+            font-size: 1.2rem
+        }
+
+        @include respond(ipad-pro){
+            font-size: 1.5rem;
+        }
+    }
+    &__type{
+        display: block;
+        color: $color-gray;
+        &--premium{
+            color: $color-white;
+        }
+        
+
+    }
+
+    &__footer{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.5rem;
+        color: $color-gray-light-6;
+
+        @include respond(tab-port){
+            font-size: 1.2rem
+        }
+
+        @include respond(ipad-pro){
+            font-size: 1.5rem;
+        }
+    }
+    &__price{
+        margin-left: auto;
+        .azn{
+            font-size: 1.2rem;
+            vertical-align: top;
+        }
+    }
+
+  
+
+    &__sale{
+        color: $color-primary-dark;
+        margin-left: auto;
+        &--primary{
+            color: $color-white;
+        }
+    }
+}
+
+.owl-dot{
+    outline: none;
+    
+}
+

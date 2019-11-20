@@ -1,0 +1,19 @@
+.recommend{
+    padding: 5rem 0;
+    &__title{
+        color: $color-gray;
+        padding: 2rem 0;
+        font-weight: 300;
+        @include respond(phone) {
+            padding: 0 1.5rem;
+          }
+    }
+    &__box{
+        @include respond(phone) {
+            padding: 0 1.5rem;
+          }
+    }
+}
+
+
+

@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jobustan</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="libs/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owl.theme.default.css">
+    <link rel="stylesheet" href="libs/default.css?v1.1">
+    <link rel="stylesheet" href="libs/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css">
+    <link rel="stylesheet" type="text/css" href="libs/normalize.css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main/main.css?v1.5">
+    <link href="libs/select2/dist/css/select2.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MC5QRG9" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div>
+        <header>
+            <div class="header">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light ">
+                        <a class="navbar-brand" href="#"><img src="images/job-logo.png" alt=""></a>
+
+
+                        <ul class="navbar-nav ml-auto nav__box">
+                            <li class="nav-item nav__item dropdown ">
+                                <a class="nav__link  nav__link--active" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Jobs
+                                </a>
+                                <div class="dropdown-menu  nav__dropdownMenu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Premium</a>
+                                    <a class="dropdown-item" href="#">VIP</a>
+                                    <a class="dropdown-item" href="#">Regular</a>
+                                </div>
+                            </li>
+                            <li class="nav-item nav__item dropdown">
+                                <a class="nav__link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Career
+                                </a>
+                                <div class="dropdown-menu nav__dropdownMenu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Courses</a>
+                                    <a class="dropdown-item" href="#">Trainings</a>
+                                    <a class="dropdown-item" href="#">Events</a>
+                                </div>
+                            </li>
+                            <li class="nav-item nav__item"><a class="nav__link nav__link--border" href=""><i
+                                        class="flaticon-man-user nav__icon"></i>Join</a></li>
+                            <li class="nav-item nav__item dropdown">
+                                <a class="nav__link  nav__link--border-gray " href="jobs-search.html"
+                                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="flaticon-old-fashion-briefcase nav__icon"></i> Employer
+                                </a>
+                                <div class="dropdown-menu nav__dropdownMenu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Join</a>
+                                    <a class="dropdown-item" href="#">Sign up</a>
+                                </div>
+                            </li>
+                            <li class="nav-item nav__item"><a class="nav__link nav__link--border-gray" href="">
+                                    <i class="flaticon-plus nav__icon"></i>Post a Job</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <button class="navbar-toggler" type="button" id="openHeader">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <select class="select-language">
+                                <option>EN</option>
+                                <option>AZ</option>
+                                <option>RU</option>
+                            </select>
+                        </div>
+                        <div id="sideMenu" class="nav__side">
+                            <a href="javascript:void(0)" class="nav__side--closeBtn" id="closeHeader">&times;</a>
+                            <a href="javascript:void(0)" class="nav__side--link dropdown-btn">Jobs <i
+                                    class="flaticon-down-arrow float-right"></i></a>
+                            <div class="nav__side--dropdownContainer">
+                                <a class="nav__side--link" href="#">Premium</a>
+                                <a class="nav__side--link" href="#">VIP</a>
+                                <a class="nav__side--link" href="#">Regular</a>
+                            </div>
+                            <a href="javascript:void(0)" class="nav__side--link dropdown-btn">Career <i
+                                    class="flaticon-down-arrow float-right"></i></a>
+                            <div class="nav__side--dropdownContainer">
+                                <a class="nav__side--link" href="#">Courses</a>
+                                <a class="nav__side--link" href="#">Trainings</a>
+                                <a class="nav__side--link" href="#">Events</a>
+                            </div>
+                            <hr class="nav__side-hr">
+                            <a href="#" class="nav__side--link"><i class="flaticon-man-user nav__phoneIcon"></i>Join</a>
+                            <a href="javascript:void(0)" class=" nav__side--link dropdown-btn"> <i
+                                    class="flaticon-old-fashion-briefcase nav__phoneIcon"></i>Employer <i
+                                    class="flaticon-down-arrow float-right"></i></a>
+                            <div class="nav__side--dropdownContainer">
+                                <a class="nav__side--link" href="#">Join</a>
+                                <a class="nav__side--link" href="#">Sign up</a>
+                            </div>
+                            <a href="javascript:void(0)" class="nav__side--link"><i
+                                    class="flaticon-plus nav__phoneIcon"></i>Post a Job</a>
+                        </div>
+
+
+                    </nav>
+
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="container staticPage ">
+        <div>
+            <h1>Terms of Use</h1>
+        </div>
+
+        <p>
+            <br>
+        </p>
+
+        <ul>
+            <li><strong>Overview</strong></li>
+        </ul>
+
+        <p>Jobustan.com is an online recruitment platform. Access to and use of the Site is subject to these terms and
+            conditions of use (“Terms of Use”).</p>
+
+        <p>"Site" shall include any information or services made available by Jobustan.com, regardless of the medium,
+            and shall include, without limitation any affiliated websites, mobile applications, videos, products and
+            applications we make available. We reserve the right at any time, and from time to time, to modify, suspend
+            or discontinue (temporarily or permanently) the Site, or any part of the Site, with or without notice.</p>
+
+        <p><strong>The Site is not intended for users under 18 years of age. If you are under 18, do not use the Site
+                and do not provide us with any personal information.</strong></p>
+
+        <p>We make no claims that the Site or any of its content is accessible or appropriate in all countries. Access
+            to the Site may not be legal by certain persons or in certain countries. If you access the Site, you do so
+            on your own initiative and are responsible for compliance with local laws.</p>
+
+        <p>
+            <br>
+        </p>
+
+        <ul>
+            <li><strong>Disclaimer</strong></li>
+        </ul>
+
+        <p>Jobustan.com does not recruitment services. The information available through the Site is provided solely for
+            informational purposes on an “as is” basis at user’s sole riskş</p>
+
+        <p>1.1. We are not responsible for any errors, omissions or representations on any of our pages or on any links
+            on any of our pages. We do not endorse in anyway any advertisers on our web pages. Please verify the
+            veracity of all information on your own before undertaking any reliance.&nbsp;</p>
+
+        <p>The linked sites are not under our control and we are not responsible for the contents of any linked site or
+            any link contained in a linked site, or any changes or updates to such sites. We are providing these links
+            to you only as a convenience, and the inclusion of any link does not imply endorsement by us of the
+            site.&nbsp;</p>
+
+        <p>Be it understood the data as contained in any form on the present website is subject to constant changes and
+            in any event shall not be considered as a representation or assurances of any kind for
+            future.&nbsp;Jobustan.com made&nbsp;appropriate efforts to avoid errors or omission in the content of this
+            Site. The user of this website acknowledges that some errors or omissions may be inherent in the content of
+            the website, which cannot be prevented, and users accepts and acknowledges that we, the Site shall have no
+            responsibility about such errors and omissions.&nbsp;</p>
+
+        <p>1.4 Any mistake, error or discrepancy noted may be brought to our attention and appropriate efforts shall be
+            undertaken to rectify the same to the possible extent.&nbsp;</p>
+
+        <p>
+            <br>
+        </p>
+
+        <ul>
+            <li><strong>Our Right to Modify These Terms of Use</strong></li>
+        </ul>
+
+        <p>We reserve the right to change these Terms of Use at any time. You should check this page regularly. The
+            changes will appear on the Site and will be effective when we post the changes. Your continued use of the
+            Site means you agree to and accept the changes.</p>
+
+        <p>
+            <br>
+        </p>
+
+        <ul>
+            <li><strong>Jobustan.com Intellectual Property</strong></li>
+        </ul>
+
+        <p><strong>Your Limited License to our Intellectual Property</strong></p>
+
+        <p>The materials used and displayed on the Site, including but not limited to text, software, photographs,
+            graphics, illustrations and artwork, video, music and sound, and names, logos, trademarks and service marks,
+            are the property of Jobustan.com. Any such content may be used solely for your personal, non-commercial use.
+            You agree not to modify, reproduce, retransmit, distribute, disseminate, sell, publish, broadcast or
+            circulate any such material without the prior written permission of Jobustan.com. Jobustan.com grants you a
+            personal, non-exclusive, non-transferable, revocable license to use the Site and any materials on the site
+            for non-commercial purposes subject to these Terms of Use.</p>
+
+        <p><strong>Jobustan.com Trademarks and Logos</strong></p>
+
+        <p>The terms Jobustan.com, www.Jobustan.com and other Jobustan.com trademarks and services marks, and associated
+            logos and all related names, logos, product and service names, designs and slogans are trademarks of
+            Jobustan.com or its affiliates or licensors. You may not use such marks without the prior written permission
+            of Jobustan.com. All other names, logos, product and service names, designs and slogans on the Site are the
+            trademarks of their respective owners.</p>
+
+        <p>
+            <br>
+        </p>
+
+        <ul>
+            <li><strong>Reliance on Information on Site</strong></li>
+        </ul>
+
+        <p><strong>We have no obligation to, and you should not expect us to, review content on our Site, including
+                Blogs or contributions by our independent contributors.</strong></p>
+
+        <p><strong>About our Contributors</strong></p>
+
+        <p>Jobustan.com seeks out content providers in particular subject matters as independent contractor contributors
+            to the Site. Jobustan.com does not represent or guarantee that any contributor has achieved any particular
+            level of expertise or knowledge or has any specific qualifications or credentials, without limitation, as to
+            the subject matter to which their contributions relate. To the extent we refer to each of these contributors
+            as an expert, you must understand we rely on the information they provide us and we are not obligated to
+            independently verify or attempt to confirm any information they provide, nor their qualifications or
+            credentials. Jobustan.com also is not obligated to monitor or independently research or verify any content
+            they contribute. Contributors, even if characterized as an expert, are not employees of Jobustan.com or its
+            affiliates and Jobustan.com cannot and does not represent or warrant the accuracy, completeness or
+            truthfulness of the qualifications or credentials of any contributor, nor of any other users of the Site.
+        </p>
+
+        <p><strong>Please do not rely on Site content, including Blogs and content from our independent contractor
+                contributors. Content is provided for general information purposes only and can never take into account
+                your unique, personal circumstances and needs. You acknowledge and agree that any reliance or actions
+                you take in violation of your agreement with us shall be at your sole and exclusive risk and
+                Jobustan.com shall have no responsibility or liability to you whatsoever. You also acknowledge and agree
+                that communications on or through the Site, whether with content providers or other users, are at your
+                own risk and are not covered by any privilege or confidentiality obligation that might apply if you were
+                to obtain your own professional advice.</strong></p>
+
+        <p>
+            <br>
+        </p>
+
+        <ul>
+            <li><strong>Prohibited Uses of the Site</strong></li>
+        </ul>
+
+        <p>You may use the Site only for lawful purposes and in accordance with these Terms of Use. You agree not to use
+            the Site:</p>
+
+        <ul>
+
+            <ul>
+                <li>In any way that violates any applicable local or international law or regulation.</li>
+                <li>For the purpose of exploiting, harming or attempting to exploit or harm minors in any way by
+                    exposing them to inappropriate content, asking for personally identifiable information or otherwise.
+                </li>
+                <li>To transmit, or procure the sending of, any advertising or promotional material, including any "junk
+                    mail", "chain letter" or "spam" or any other similar solicitation.</li>
+                <li>To impersonate or attempt to impersonate Jobustan.com, a Jobustan.com employee, another user or any
+                    other person or entity (including, without limitation, by using email addresses or screen names
+                    associated with any of the foregoing).</li>
+                <li>To engage in any other conduct that restricts or inhibits anyone's use or enjoyment of the Site, or
+                    which, as determined by us, may harm Jobustan.com or users of the Site or expose them to liability.
+                </li>
+            </ul>
+        </ul>
+
+        <p>Additionally, you agree not to:</p>
+
+        <ul>
+
+            <ul>
+                <li>"Scrape" or disaggregate data from the Site (whether by manual or automated means) for any
+                    commercial, marketing, or data compiling or enhancing purpose.</li>
+                <li>Introduce any viruses, trojan horses, worms, logic bombs or other material which is malicious or
+                    technologically harmful.</li>
+                <li>Attempt to gain unauthorized access to, interfere with, damage or disrupt any parts of the Site, the
+                    server on which the Site is stored, or any server, computer or database connected to the Site.</li>
+                <li>Otherwise attempt to interfere with the proper working of the Site.</li>
+            </ul>
+        </ul>
+
+        <p>
+            <br>
+        </p>
+
+        <ul>
+            <li><strong>Content That You Make Available on the Site</strong></li>
+        </ul>
+
+        <p><strong>User Contributions</strong></p>
+
+        <p>The Site may contain message boards, chat rooms, personal web pages or profiles, forums, bulletin boards and
+            other interactive features (collectively, "Interactive Services") that allow users to post, submit, publish,
+            display or transmit to other users or other persons (hereinafter, "post") content or materials
+            (collectively, "User Contributions") on or through the Site.</p>
+
+        <p>If you voluntarily disclose personal information (e.g., user name, email address) on the Site, such as on a
+            forum, chat room or on any other user or member-generated pages, that information can be viewed in search
+            engines, collected and used by others and may result in unsolicited contact from other parties.&nbsp;</p>
+
+        <p>Any User Contribution you post to the Site will be considered non-confidential and non-proprietary. By
+            providing any User Contribution on the Site, you grant us and our affiliates and service providers, and each
+            of their and our respective licensees, successors and assigns the right to use, reproduce, modify, perform,
+            display, distribute and otherwise disclose to third parties any such material for any purpose.</p>
+
+        <p>You represent and warrant that:</p>
+
+        <ul>
+
+            <ul>
+                <li>You own or control all rights in and to the User Contributions and have the right to grant the
+                    license granted above to us and our affiliates and service providers, and each of their and our
+                    respective licensees, successors and assigns.</li>
+                <li>All of your User Contributions do and will comply with these Terms of Use.</li>
+            </ul>
+        </ul>
+
+        <p>You understand and acknowledge that you are responsible for any User Contributions you submit or contribute,
+            and you, not the Company, have full responsibility for such content, including its legality, reliability,
+            accuracy and appropriateness. We are not responsible, or liable to any third party, for the content or
+            accuracy of any User Contributions posted by you or any other user of the Site.</p>
+
+        <p><strong>Monitoring and Enforcement; Termination</strong></p>
+
+        <p>We have the right to:</p>
+
+        <ul>
+
+            <ul>
+                <li>Remove or refuse to post any User Contributions for any or no reason in our sole discretion.</li>
+                <li>Take any action with respect to any User Contribution that we deem necessary or appropriate in our
+                    sole discretion, including if we believe that such User Contribution violates the Terms of Use,
+                    including the content standards below, infringes any intellectual property right or other right of
+                    any person or entity, threatens the personal safety of users of the Site or the public or could
+                    create liability for the Company.</li>
+                <li>Disclose your identity or other information about you to any third party who claims that material
+                    posted by you violates their rights, including their intellectual property rights or their right to
+                    privacy.</li>
+                <li>Take appropriate legal action, including without limitation, referral to law enforcement, for any
+                    illegal or unauthorized use of the Site.</li>
+                <li>Terminate or suspend your access to all or part of the Site for any or no reason, including without
+                    limitation, any violation of these Terms of Use.</li>
+            </ul>
+        </ul>
+
+        <p>Without limiting the foregoing, we have the right to fully cooperate with any law enforcement authorities or
+            court order requesting or directing us to disclose the identity or other information related to anyone
+            posting any materials on or through the Site. YOU WAIVE AND HOLD HARMLESS THE COMPANY AND ITS AFFILIATES,
+            AGENTS, LICENSEES AND SERVICE PROVIDERS FROM ANY CLAIMS RESULTING FROM ANY ACTION TAKEN BY ANY OF THE
+            FOREGOING PARTIES DURING OR AS A RESULT OF ITS INVESTIGATIONS AND FROM ANY ACTIONS TAKEN AS A CONSEQUENCE OF
+            INVESTIGATIONS BY EITHER THE COMPANY/SUCH PARTIES OR LAW ENFORCEMENT AUTHORITIES.</p>
+
+        <p>We cannot and do not undertake to review all material before it is posted on the Site and cannot ensure
+            prompt removal of objectionable material after it has been posted. Accordingly, we assume no liability for
+            any action or inaction regarding transmissions, communications or content provided by any user or third
+            party. We have no liability or responsibility to anyone for performance or nonperformance of the activities
+            described in this section.</p>
+
+        <p><strong>Content Standards</strong></p>
+
+        <p>These content standards apply to any and all User Contributions and use of Interactive Services. User
+            Contributions must in their entirety comply with all applicable local and international laws and
+            regulations. Without limiting the foregoing, User Contributions must not:</p>
+
+        <ul>
+
+            <ul>
+                <li>Contain any material which is defamatory, obscene, indecent, abusive, offensive, harassing, violent,
+                    hateful, inflammatory or otherwise objectionable.</li>
+                <li>Promote sexually explicit or pornographic material, violence, or discrimination based on race, sex,
+                    religion, nationality, disability, sexual orientation or age.</li>
+                <li>Infringe any patent, trademark, trade secret, copyright or other intellectual property or other
+                    rights of any other person.</li>
+                <li>Violate the legal rights (including the rights of publicity and privacy) of others or contain any
+                    material that could give rise to any civil or criminal liability under applicable laws or
+                    regulations or that otherwise may be in conflict with these Terms of Use&nbsp;</li>
+                <li>Be likely to deceive any person.</li>
+                <li>Promote any illegal activity, or advocate, promote or assist any unlawful act.</li>
+                <li>Cause annoyance, inconvenience or needless anxiety or be likely to upset, harass, embarrass, alarm
+                    or annoy any other person.</li>
+                <li>Impersonate any person or misrepresent your identity or affiliation with any person or organization.
+                </li>
+                <li>Give the impression that they emanate from or are endorsed by us or any other person or entity, if
+                    that is not the case.</li>
+            </ul>
+            <li><strong>Your Indemnification of Us</strong></li>
+        </ul>
+
+        <p>You agree to indemnify, defend and hold harmless Jobustan.com, and its officers, directors, owners,
+            employees, agents, information providers, affiliates, licensors and licensees (collectively, the
+            "Indemnified Parties") from and against any and all liability and costs, including, without limitation,
+            reasonable attorneys' fees, incurred by the Indemnified Parties in connection with any claim arising out of
+            (a) any User Contributions, or (b) breach by you or any user of your account or these Terms of Use or any
+            representations, warranties and covenants contained in these Terms of Use. You shall cooperate fully and
+            reasonably in the defense of any such claim. Jobustan.com reserves the right, at its own expense, to assume
+            the exclusive defense and control of any matter subject to indemnification by you.</p>
+
+        <p>
+            <br>
+        </p>
+
+        <ul>
+            <li><strong>WARRANTY DISCLAIMER</strong></li>
+        </ul>
+
+        <p>THE SITE IS PROVIDED ON AN "AS IS" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING
+            BUT NOT LIMITED TO WARRANTIES OF TITLE OR IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR
+            PURPOSE, OTHER THAN THOSE WARRANTIES WHICH ARE IMPOSED BY AND INCAPABLE OF EXCLUSION, RESTRICTION OR
+            MODIFICATION UNDER THE LAWS APPLICABLE TO THESE TERMS OF USE. WE DO NOT ENDORSE AND ARE NOT RESPONSIBLE FOR
+            THE ACCURACY OR RELIABILITY OF ANY OPINION, ADVICE OR STATEMENT ON THE SITE. THE INFORMATION, FACTS, AND
+            OPINIONS PROVIDED ARE NO SUBSTITUTE FOR PROFESSIONAL ADVICE.</p>
+
+        <p>
+            <br>
+        </p>
+
+        <ul>
+            <li><strong>LIABILITY DISCLAIMER</strong></li>
+        </ul>
+
+        <p>YOUR USE OF THE SITE IS AT YOUR OWN RISK. NEITHER, JOBUSTAN.COM OR ABOUT, INC. NOR ANY OF ITS SUBSIDIARIES,
+            DIVISIONS, AFFILIATES, AGENTS, REPRESENTATIVES OR LICENSORS (INCLUDING OUR INDEPENDENT CONTRACTOR
+            CONTRIBUTORS) SHALL BE LIABLE TO YOU OR ANYONE ELSE FOR ANY LOSS OR INJURY OR ANY DIRECT, INDIRECT,
+            INCIDENTAL, CONSEQUENTIAL, SPECIAL, PUNITIVE OR SIMILAR DAMAGES ARISING OUT OF YOUR ACCESS OR USE OF, OR
+            YOUR INABILITY TO ACCESS OR USE, THE SITE AND THE INFORMATION AVAILABLE ON THE SITE OR ARISING OUT OF ANY
+            ACTION TAKEN IN RESPONSE TO OR AS A RESULT OF ANY INFORMATION AVAILABLE ON THE SITE. YOU HEREBY WAIVE ANY
+            AND ALL CLAIMS AGAINST JOBUSTAN.COM, ABOUT, INC. AND ITS SUBSIDIARIES, DIVISIONS, AFFILIATES, AGENTS,
+            REPRESENTATIVES AND LICENSORS (INCLUDING OUR INDEPENDENT CONTRACTOR CONTRIBUTORS) ARISING OUT OF YOUR USE OF
+            THE SITE AND THE INFORMATION AVAILABLE THEREON.</p>
+
+        <p>
+            <br>
+        </p>
+
+        <ul>
+            <li><strong>Third Party Links, Advertisements, Site and Content</strong></li>
+        </ul>
+
+        <p>We do not review or monitor any websites, advertisements, or other media linked to or available through the
+            Site and are not responsible for the content of any such third-party advertisements or linked websites.
+            Prior to purchasing any third-party products or services described on the Site, you are advised to verify
+            pricing, product quality and other information necessary to make an informed purchase. Neither Jobustan.com
+            nor its parent or any of its subsidiaries, divisions, affiliates, agents, representatives or licensors shall
+            have any liability arising from your purchases of third-party products or services based upon the
+            information provided on the Site, and we shall not receive or review complaints regarding such purchases.
+        </p>
+
+        <p>
+            <br>
+        </p>
+
+        <ul>
+            <li><strong>Disputes</strong></li>
+        </ul>
+
+        <p>These Terms of Use and any disputes arising out of or related to the Site shall be governed by, and construed
+            and enforced in accordance with, the laws of the Republic of Azerbaijan. In the event of any such dispute,
+            you irrevocably consent to exclusive jurisdiction and venue in the courts located in the Baku, Azerbaijan.
+        </p>
+
+        <p>ANY CAUSE OF ACTION OR CLAIM YOU MAY HAVE ARISING OUT OF OR RELATING TO THESE TERMS OF USE OR THE SITE MUST
+            BE COMMENCED WITHIN ONE (1) YEAR AFTER THE CAUSE OF ACTION ACCRUES, OTHERWISE, SUCH CAUSE OF ACTION OR CLAIM
+            IS PERMANENTLY BARRED AND YOU HEREBY AGREE TO WAIVE SUCH CAUSE OF ACTION OR CLAIM AFTER SUCH DATE.</p>
+
+        <p>
+            <br>
+        </p>
+
+        <ul>
+            <li><strong>Waiver and Severability</strong></li>
+        </ul>
+
+        <p>No waiver by Jobustan.com of any term or condition set forth in these Terms of Use shall be deemed a further
+            or continuing waiver of such term or condition or a waiver of any other term or condition, and any failure
+            of Jobustan.com to assert a right or provision under these Terms of Use shall not constitute a waiver of
+            such right or provision.</p>
+
+        <p>If any provision of these Terms of Use is held by a court or other tribunal of competent jurisdiction to be
+            invalid, illegal or unenforceable for any reason, such provision shall be eliminated or limited to the
+            minimum extent such that the remaining provisions of the Terms of Use will continue in full force and
+            effect.</p>
+
+        <p>
+            <br>
+        </p>
+
+        <ul>
+            <li><strong>Entire Agreement</strong></li>
+        </ul>
+
+        <p>The Terms of Use constitute the sole and entire agreement between you and Jobustan.com with respect to the
+            Site and supersede all prior and contemporaneous understandings, agreements, representations and warranties,
+            both written and oral, with respect to the Site.</p>
+
+        <p>
+            <br>
+        </p>
+
+        <ul>
+            <li><strong>How to Contact Us</strong></li>
+        </ul>
+
+        <p>All feedback, comments, requests for technical support and other communications relating to the Site should
+            be directed to: inquiry@jobustan.com &nbsp;</p>
+
+        <p>
+            <br>
+        </p>
+
+        <p><strong>Thank you for visiting Jobustan.com!</strong></p>
+
+        <p>
+            <br>
+        </p>
+    </div>
+
+    <div>
+        <footer>
+            <div class="footer">
+                <div class="container-box">
+                    <div class="footer__row">
+                        <div class="footer__row--col">
+                            <ul class="footer__list">
+                                <li><a class="footer__list--page" href="http://jobustan.com">Home</a></li>
+                                <li><a class="footer__list--page" href="http://jobustan.com/about-us">About us</a></li>
+                                <li><a class="footer__list--page" href="http://jobustan.com/blogs">Blog </a></li>
+                                <li><a class="footer__list--page" href="http://jobustan.com/contact">Contact</a></li>
+                                <li><a class="footer__list--page" href="http://jobustan.com/terms-use">Terms of Use </a>
+                                </li>
+                                <li><a class="footer__list--page" href="http://jobustan.com/faq">Help & FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__row--col">
+                            <ul class="footer__list">
+                                <li><span class="footer__list--title">Recent Jobs</span></li>
+                                <li><a class="footer__list--link" href="javascript:void(0)">Premium jobs</a></li>
+                                <li><a class="footer__list--link" href="javascript:void(0)">VIP jobs </a></li>
+                                <li><a class="footer__list--link" href="javascript:void(0)">Regular jobs</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__row--col">
+                            <ul class="footer__list">
+                                <li><span class="footer__list--title">Trainings</span></li>
+                                <li><a class="footer__list--link" href="javascript:void(0)">Free trainings</a></li>
+                                <li><a class="footer__list--link" href="javascript:void(0)">Discounted trainings</a>
+                                </li>
+                                <li><a class="footer__list--link" href="javascript:void(0)">Paid Trainings </a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__row--col">
+                            <ul class="footer__list">
+                                <li><a class="footer__list--link" href="javascript:void(0)"><i
+                                            class="flaticon-close-envelope footer__list--icon"></i>info@jobustan.az</a>
+                                </li>
+                                <li><a class="footer__list--link" href="javascript:void(0)"><i
+                                            class="flaticon-phone-receiver footer__list--icon"></i>+994 55 123 45 67</a>
+                                </li>
+                                <li>
+                                    <ul class="footer__list">
+                                        <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i
+                                                    class="flaticon-instagram m"></i></a></li>
+                                        <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i
+                                                    class="flaticon-facebook-logo m"></i></a></li>
+                                        <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i
+                                                    class="flaticon-linkedin-logo m"></i></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="http://jobustan.com/themes/jobustan/assets/user/libs/js/jquery.inputmask.bundle.js"></script>
+    <script src="http://jobustan.com/themes/jobustan/assets/user/libs/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+
+    <script
+        src="http://jobustan.com/themes/jobustan/assets/user/libs/air-datepicker/dist/js/datepicker.min.js"></script>
+    <script
+        src="http://jobustan.com/themes/jobustan/assets/user/libs/air-datepicker/dist/js/i18n/datepicker.en.js"></script>
+    <script
+        src="http://jobustan.com/themes/jobustan/assets/user/libs/air-datepicker/dist/js/i18n/datepicker.az.js"></script>
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+    <script src="http://jobustan.com/themes/jobustan/assets/user/libs/Croppie/croppie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.js"></script>
+
+    <script src="http://jobustan.com/themes/jobustan/assets/user/js/all.js"></script>
+
+    <script src="/modules/system/assets/js/framework.js"></script>
+    <script src="/modules/system/assets/js/framework.extras.js"></script>
+    <link rel="stylesheet" property="stylesheet" href="/modules/system/assets/css/framework.extras.css">
+
+</body>
+
+</html>

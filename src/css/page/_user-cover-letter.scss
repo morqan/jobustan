@@ -1,0 +1,45 @@
+.coverLetter{
+    @include respond(phone) {
+        position: relative;
+        
+      }
+    &__new{
+        color: $color-primary-dark;
+        font-size: 1.8rem;
+       
+    }
+
+    &__box{
+        box-shadow: 0px 8px 18.9px 2.1px rgba(67, 67, 67, 0.09);
+        border-radius: 1rem;
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+    }
+    &__title{
+       font-size: 1.5rem;
+       color: $color-gray-dark; 
+       margin-bottom: 2rem;
+    }
+    &__text{
+        font-size: 1.3rem;
+       color: $color-gray-dark; 
+       font-weight: 350;
+    }
+
+    &__drop{
+        cursor: pointer;
+        
+        @include respond(phone) {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        
+      }
+    }
+}
+
+
+  

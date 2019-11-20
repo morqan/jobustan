@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Upload Blog</title>
+    <link rel="stylesheet" href="libs/default.css?v1.1">
+    <link rel="stylesheet" type="text/css" href="libs/normalize.css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/owl.theme.default.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/datatables.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/Croppie/croppie.css">
+    <!-- Font Awesome for demo purpose -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- FontAwesome -->
+
+    <link rel="stylesheet" href="css/main/main.css?v1.93">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="container-box">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <a class="navbar-brand" href="#"><img src="images/job-logo.png" alt=""></a>
+
+
+                    <ul class="navbar-nav ml-auto nav__box">
+                        <li class="nav-item nav__item dropdown ">
+                            <a class="nav__link  nav__link--active" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Jobs
+                            </a>
+                            <div class="dropdown-menu  nav__dropdownMenu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Premium</a>
+                                <a class="dropdown-item" href="#">VIP</a>
+                                <a class="dropdown-item" href="#">Regular</a>
+                            </div>
+                        </li>
+                        <li class="nav-item nav__item dropdown">
+                            <a class="nav__link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Career
+                            </a>
+                            <div class="dropdown-menu nav__dropdownMenu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Courses</a>
+                                <a class="dropdown-item" href="#">Trainings</a>
+                                <a class="dropdown-item" href="#">Events</a>
+                            </div>
+                        </li>
+                        <li class="nav-item nav__item"><a class="nav__link nav__link--border" href=""><i
+                                    class="flaticon-man-user nav__icon"></i>Join</a></li>
+                        <li class="nav-item nav__item dropdown">
+                            <a class="nav__link  nav__link--border-gray " href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="flaticon-old-fashion-briefcase nav__icon"></i> Employer
+                            </a>
+                            <div class="dropdown-menu nav__dropdownMenu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Join</a>
+                                <a class="dropdown-item" href="#">Sign up</a>
+                            </div>
+                        </li>
+                        <li class="nav-item nav__item"><a class="nav__link nav__link--border-gray" href="">
+                                <i class="flaticon-plus nav__icon"></i>Post a Job</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <button class="navbar-toggler" type="button" id="openHeader">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="nav-item nav__item dropdown ">
+                            <a class="nav__link nav__link--red " href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                EN
+                            </a>
+                            <div class="dropdown-menu nav__dropdownMenu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">AZ</a>
+                                <a class="dropdown-item" href="#">RU</a>
+                                <a class="dropdown-item" href="#">EN</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sideMenu" class="nav__side">
+                        <a href="javascript:void(0)" class="nav__side--closeBtn" id="closeHeader">&times;</a>
+                        <a href="javascript:void(0)" class="nav__side--link dropdown-btn">Jobs <i
+                                class="flaticon-down-arrow float-right"></i></a>
+                        <div class="nav__side--dropdownContainer">
+                            <a class="nav__side--link" href="#">Premium</a>
+                            <a class="nav__side--link" href="#">VIP</a>
+                            <a class="nav__side--link" href="#">Regular</a>
+                        </div>
+                        <a href="javascript:void(0)" class="nav__side--link dropdown-btn">Career <i
+                                class="flaticon-down-arrow float-right"></i></a>
+                        <div class="nav__side--dropdownContainer">
+                            <a class="nav__side--link" href="#">Courses</a>
+                            <a class="nav__side--link" href="#">Trainings</a>
+                            <a class="nav__side--link" href="#">Events</a>
+                        </div>
+                        <hr class="nav__side-hr">
+                        <a href="#" class="nav__side--link"><i class="flaticon-man-user nav__icon"></i>Join</a>
+                        <a href="javascript:void(0)" class=" nav__side--link dropdown-btn"> <i
+                                class="flaticon-old-fashion-briefcase nav__icon"></i>Employer <i
+                                class="flaticon-down-arrow float-right"></i></a>
+                        <div class="nav__side--dropdownContainer">
+                            <a class="nav__side--link" href="#">Join</a>
+                            <a class="nav__side--link" href="#">Sign up</a>
+                        </div>
+                        <a href="javascript:void(0)" class="nav__side--link"><i class="flaticon-plus nav__icon"></i>Post
+                            a Job</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="text-center">
+            <h1 class="upload__headering">Upload Your Blog</h1>
+            <hr class="upload__headering--hr">
+        </div>
+        <section>
+            <div class="upload u-margin-bottom-2">
+                <div class="container-box">
+                    <div class="row">
+                        <div class="offset-md-1 col-md-10  col-12">
+
+                            <form action="#">
+                                <div class="blogForm">
+                                    <div class="blogForm__header u-margin-bottom-2">
+                                        <input maxlength="100" id="my_textarea7" type="text" class="blogForm__element"
+                                            placeholder="Blog başlığını qeyd edin">
+                                        <p class="blogForm__count">
+                                            <span class="countcharacters--live7">0</span>
+                                            <span class="countcharacters--max">/100</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="blogForm__text u-margin-bottom-2">
+                                        <textarea maxlength="5000" id="my_textarea8" rows="17"
+                                            class="blogForm__element"></textarea>
+                                        <p class="blogForm__count">
+                                            <span class="countcharacters--live8">0</span>
+                                            <span class="countcharacters--max">/5000</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="blogForm__image u-margin-bottom-2">
+                                        <div class="blogForm__image_inner">
+                                            <label class="cabinet center-block blog__shape ">
+                                                <figure class="blog__shape--figure">
+                                                    <img src="images/white.png" class="img-fluid blog__shape--img  " id="item-img-output" />
+                                                    <figcaption class="blog__upload--link">
+                                                        <i class="blog__upload--icon flaticon-plus"></i>
+                                                        <span class="blog__upload--text">Upload main photo</span>
+                                                    </figcaption>
+
+                                                </figure>
+                                                <input type="file" class="item-img file center-block"
+                                                    name="file_photo" />
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="blogForm__hashtags u-margin-bottom-2">
+                                        <input type="text" class="blogForm__element" placeholder="enter hastags">
+                                    </div>
+
+                                    <div class="blogForm__button u-margin-top-7 text-right">
+                                        <a href="#" class="blogForm__upload-link">Upload</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="container-box">
+                <div class="footer__row">
+                    <div class="footer__row--col">
+                        <ul class="footer__list">
+                            <li><a class="footer__list--page" href="javascript:void(0)">Home</a></li>
+                            <li><a class="footer__list--page" href="javascript:void(0)">About us</a></li>
+                            <li><a class="footer__list--page" href="javascript:void(0)">Blog </a></li>
+                            <li><a class="footer__list--page" href="javascript:void(0)">Contact</a></li>
+                            <li><a class="footer__list--page" href="javascript:void(0)">Terms and Conditions</a></li>
+                            <li><a class="footer__list--page" href="javascript:void(0)">Help & FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__row--col">
+                        <ul class="footer__list">
+                            <li><span class="footer__list--title">Recent Jobs</span></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)">Premium jobs</a></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)">VIP jobs </a></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)">Regular jobs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__row--col">
+                        <ul class="footer__list">
+                            <li><span class="footer__list--title">Trainings</span></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)">Free trainings</a></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)">Discounted trainings</a></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)">Tam qiymt</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__row--col">
+                        <ul class="footer__list">
+                            <li><a class="footer__list--link" href="javascript:void(0)"><i
+                                        class="flaticon-close-envelope footer__list--icon"></i>info@jobustan.az</a></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)"><i
+                                        class="flaticon-phone-receiver footer__list--icon"></i>+994 55 123 45 67</a>
+                            </li>
+                            <li>
+                                <ul class="footer__list">
+                                    <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i
+                                                class="flaticon-instagram m"></i></a></li>
+                                    <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i
+                                                class="flaticon-facebook-logo m"></i></a></li>
+                                    <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i
+                                                class="flaticon-linkedin-logo m"></i></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="cropImagePop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-crop">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="upload-img" class="center-block"></div>
+                </div>
+                <div class="modal-footer">
+                    <button class="vanilla-rotate btn btn-default" data-deg="-90">Rotate Left</button>
+                    <button class="vanilla-rotate btn btn-default" data-deg="90">Rotate Right</button>
+                    <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+                    <button type="button" id="cropImageBtn" class="btn btn-primary">Crop</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="libs/js/jquery.inputmask.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+    <script src="libs/js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote-bs4.js"></script>
+    <script src="http://cdn.webix.com/edge/webix.js" type="text/javascript"></script>
+    <script src="libs/air-datepicker/dist/js/datepicker.min.js"></script>
+    <script src="libs/air-datepicker/dist/js/i18n/datepicker.en.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+    <script src="libs/input-mask.js"></script>
+    <script src="libs/Croppie/croppie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.js"></script>
+    <script src="js/all.js"></script>
+
+
+    <script>
+        // $(".gambar").attr("src", "https://user.gadjian.com/static/images/personnel_boy.png");
+        var $uploadCrop,
+            tempFilename,
+            rawImg,
+            imageId;
+        function readFile(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('.upload-img').addClass('ready');
+                    $('#cropImagePop').modal('show');
+                    rawImg = e.target.result;
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+            else {
+                swal("Sorry - you're browser doesn't support the FileReader API");
+            }
+        }
+
+        $uploadCrop = $('#upload-img').croppie({
+            viewport: {
+                width: 700,
+                height: 350,
+                type: 'square'
+            },
+            enforceBoundary: false,
+            enableExif: true,
+            enableOrientation: true
+        });
+        $('#cropImagePop').on('shown.bs.modal', function () {
+            // alert('Shown pop');
+            $uploadCrop.croppie('bind', {
+                url: rawImg,
+                orientation: 1
+
+            }).then(function () {
+                console.log('jQuery bind complete');
+            });
+            $('.vanilla-rotate').on('click', function (ev) {
+                $uploadCrop.croppie('rotate', parseInt($(this).data('deg')));
+            });
+        });
+
+        $('.item-img').on('change', function () {
+            imageId = $(this).data('id'); tempFilename = $(this).val();
+            $('#cancelCropBtn').data('id', imageId); readFile(this);
+        });
+        $('#cropImageBtn').on('click', function (ev) {
+            $uploadCrop.croppie('result', {
+                type: 'base64',
+                format: 'png',
+                size: { width: 730, height: 350 }
+            }).then(function (resp) {
+                $('#item-img-output').attr('src', resp);
+                $('#cropImagePop').modal('hide');
+                $('.blog__upload--link').css("z-index", "-1");
+                $('.blog__shape--figure').css("margin-bottom", "-2rem");
+            });
+        });
+     
+    </script>
+    <script>
+ document.addEventListener("DOMContentLoaded", function(event) {
+   document.querySelectorAll('img').forEach(function(img){
+  	img.onerror = function(){this.style.display='none';};
+   })
+});
+//  $(document).ready(function() {    
+//     $(".blog__shape--img").error(function(){
+//         $(this).hide();
+//     });
+// });
+    </script>
+</body>
+
+</html>

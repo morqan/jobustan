@@ -1,0 +1,151 @@
+.messages{
+    display: flex;
+
+    &__back{
+        color:$color-gray;
+        margin-right: 2rem;
+    }
+    &__form{
+        padding: 1rem 2rem;
+    }
+    &__company{
+        margin-bottom: 2rem;
+      margin-bottom: 2rem;
+    }
+    &__box{
+        padding: 1rem 2rem;
+        max-height: 40rem;
+        overflow: scroll;
+        @include respond(phone){
+            padding:  1rem;
+        }
+    }
+    &__user{
+        text-align: right;
+         margin-bottom: 2rem;
+        &--name{
+            text-align: right;
+            font-size: 1.5rem;
+            color: $color-gray;
+        }
+    }
+    &__date{
+        text-align: center;
+        font-size: 1.5rem;
+        color: $color-gray-light-2;
+        margin-top: 1rem;
+    }
+    &__time{
+        color: $color-gray-light-2;
+        font-weight: 400;
+        font-size: 1.2rem;
+        display: block;
+        
+    }
+    &__intervDate{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        font-size: 1.5rem;
+        @include respond(phone){
+            padding: 1.5rem 1rem;
+        }
+
+        span{
+            color: $color-primary-dark;
+            i::before{
+                color: $color-primary-dark;
+                margin-right: 1rem;
+                @include respond(phone){
+                    margin-right: 4px;
+                    font-size: 14px;
+                }
+            }
+        }
+        p{
+            margin-bottom: unset;
+            span{
+                color: $color-gray;
+                font-size: 1.4rem;
+            }
+            span:not(:last-child){
+                margin-right: 3.5rem;
+                @include respond(phone){
+                    margin-right: 1.5rem;
+                }
+            }
+        }
+    }
+    &__compName{
+        color: $color-gray-dark;
+        font-weight: 400;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+    &__list{
+        width: 100%;
+        @include respond(phone){
+            
+        }
+
+        &--box{
+            max-height: 45rem;
+            overflow: scroll;
+        }
+        &--title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.1rem;
+            color: $color-gray-light-2;
+        }
+        &--text{
+            font-size: 1.3rem;
+            color: $color-gray-light-2;
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        &--count{
+            background-color: $color-primary-dark;
+            padding: 4px 10px;
+            padding-top: 6px;
+            color: $color-white;
+            border-radius: 50%;
+            line-height: normal;
+        }
+        &--item{
+            padding: 2rem;
+            border: 1px solid  $color-gray-light-1;
+            border-top: unset;
+
+        }
+    }
+
+    &__inner{
+        width: 100%;
+        display: none;
+        @include respond(phone){
+              
+        }
+    }
+    &__header{
+        background-color: $color-primary-dark;
+        padding: 2.14rem 2rem;
+        font-size: 1.5rem;
+        &--gray{
+            color: $color-gray;
+            background-color: $color-gray-light-1;
+            padding: 1rem 2rem;
+        }
+        p{
+            margin-bottom: 0;
+            line-height: 15px;
+        }
+    }
+}
+
+
+  

@@ -1,0 +1,41 @@
+.blog{
+    margin-top: -10rem;
+    margin-bottom: 5rem;
+    &__links{
+        height: 5rem;
+    }
+}
+
+.blog-img {
+    background-image: url(../../images/blogheader-min.jpg);
+    padding: 17rem 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.__pagination{
+    justify-content: center;
+    margin-top: 2.5rem   
+}
+.page__link{
+    border: unset;
+    color: $color-gray;
+    font-size: 1.5rem;
+    margin-left: 1px;
+    padding: .5rem 1.2rem;
+    &:hover{
+        background-color: transparent;
+        color: $color-gray;
+        
+    }
+    &--active{
+        background-color: $color-primary-dark;
+        border-radius: 50%;
+        color: $color-white;
+    }
+}
+
+.subscribe--icon::before{
+    margin-right: 1rem;
+}

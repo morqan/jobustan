@@ -1,0 +1,72 @@
+.companyDetails{
+
+    &__info{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__follow{
+        margin: 2rem 0;
+        text-align: right;
+        &--reviews{
+            color: $color-gray;
+            font-size: 2rem;
+            padding-top: 1rem;
+        }
+        &--icon{
+            color: $color-primary-dark;
+            
+        }
+    }
+    &__card{
+        display: flex;
+        margin: 2rem 0;
+        
+        &--imgBox{
+            display: inline-block;
+            max-width: 34rem;
+            margin-right: 2rem;
+            padding: 3rem;
+            background-color: #f6f6f6;
+        }
+        &--img{
+            width: 100%;
+        }
+        &--info{
+            padding: 1rem 0;
+        }
+        &--title{
+            color: $color-primary-dark;
+            margin-bottom: 2rem;
+            font-weight: 350;
+        }
+        &--description{
+            color: $color-gray;
+            font-size: 1.8rem;
+            margin-bottom: 0;
+        }
+    }
+    &__sosial{
+        text-align: center;
+        background-color: #ebebeb;
+        padding: 2rem 3rem;
+        &--link{
+            color: $color-gray;
+            font-size: 2rem;
+        }
+        &--box{
+            display: flex;
+            justify-content: space-around;
+        }
+        &--list{
+            padding-left: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            margin:2rem;
+            font-size: 1.8rem;
+            color: $color-gray;
+        }
+    }
+}
+
+

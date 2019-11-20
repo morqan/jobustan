@@ -1,0 +1,98 @@
+.blogs{
+    
+
+    &__card{
+        display: flex;
+        align-items: center;
+        padding-right: 2rem;
+        border-radius: 1rem;
+        box-shadow: 0px 4px 8px 0px rgba(165, 165, 165, 0.13);
+        margin-bottom: 2rem;
+        @include respond(phone) {
+            display: block;
+            padding-right: unset;
+            position: relative;
+            padding-bottom: 39rem;
+          }
+    }
+    &__img{
+        width: 16.5rem;
+        height: 14rem;
+        margin-right: 3rem;
+        @include respond(phone) {
+            width: 100%;
+            height: 17rem;
+            margin-right: unset;
+            margin-bottom: 2rem;
+        }
+        img{
+            width: 16.5rem;
+            height: 100%;
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            @include respond(phone) {
+                width: 100%;
+                border-bottom-left-radius: unset;
+                border-top-right-radius: 1rem;
+                
+            }
+        }
+    }
+
+    &__info{
+        padding-right: 3rem;
+
+        @include respond(phone) {
+            padding: 1.5rem;
+            
+        }
+        &--title{
+           margin-bottom: 1rem;
+            color: $color-gray-dark;
+            
+        }
+
+        &--text{
+            color: $color-gray-dark;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+           
+        }
+        &--status{
+            color: $color-primary-dark;
+            font-size: 1.3rem;
+        }
+    }
+
+    &__dropdown{
+        cursor: pointer;
+        height: 4.5rem;
+        width: 4rem;
+        @include respond(phone) {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            
+        }
+        &--btn{
+            border: unset;
+            padding: 1rem;
+            line-height: normal;
+            i::before{
+                font-size: 3rem;
+            }
+        }
+
+        &--link{
+            padding: .5rem;
+            display: block;
+            text-align: center;
+        }
+
+        &--content{
+            min-width: 10rem;
+        }
+    }
+}
+
+

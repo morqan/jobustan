@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Applied</title>
+    <link rel="stylesheet" href="libs/default.css?v1.1">
+    <link rel="stylesheet" type="text/css" href="libs/normalize.css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="css/main/main.css?v1.93">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="header">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light ">
+                        <a class="navbar-brand" href="#"><img src="images/job-logo.png" alt=""></a>
+
+
+                        <ul class="navbar-nav ml-auto nav__box">
+                            <li class="nav-item nav__item dropdown ">
+                                <a class="nav__link  nav__link--active" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Jobs
+                                </a>
+                                <!-- <div class="dropdown-menu  nav__dropdownMenu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Premium</a>
+                                    <a class="dropdown-item" href="#">VIP</a>
+                                    <a class="dropdown-item" href="#">Regular</a>
+                                </div> -->
+                            </li>
+                            <li class="nav-item nav__item dropdown">
+                                <a class="nav__link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Career
+                                </a>
+                                <!-- <div class="dropdown-menu nav__dropdownMenu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Courses</a>
+                                    <a class="dropdown-item" href="#">Trainings</a>
+                                    <a class="dropdown-item" href="#">Events</a>
+                                </div> -->
+                            </li>
+                            <li class="nav-item nav__item"><a class="nav__link nav__link--border" href=""><i
+                                        class="flaticon-man-user nav__icon"></i>Join</a></li>
+                            <li class="nav-item nav__item dropdown">
+                                <a class="nav__link  nav__link--border-gray " href="jobs-search.html"
+                                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="flaticon-old-fashion-briefcase nav__icon"></i> Employer
+                                </a>
+                                <!-- <div class="dropdown-menu nav__dropdownMenu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Join</a>
+                                    <a class="dropdown-item" href="#">Sign up</a>
+                                </div> -->
+                            </li>
+                            <li class="nav-item nav__item"><a class="nav__link nav__link--border-gray" href="">
+                                    <i class="flaticon-plus nav__icon"></i>Post a Job</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <button class="navbar-toggler" type="button" id="openHeader">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <select class="select-language">
+                                <option>EN</option>
+                                <option>AZ</option>
+                                <option>RU</option>
+                            </select>
+                        </div>
+                        <div id="sideMenu" class="nav__side">
+                            <a href="javascript:void(0)" class="nav__side--closeBtn" id="closeHeader">&times;</a>
+                            <a href="javascript:void(0)" class="nav__side--link dropdown-btn">Jobs <i
+                                    class="flaticon-down-arrow float-right"></i></a>
+                            <div class="nav__side--dropdownContainer">
+                                <a class="nav__side--link" href="#">Premium</a>
+                                <a class="nav__side--link" href="#">VIP</a>
+                                <a class="nav__side--link" href="#">Regular</a>
+                            </div>
+                            <a href="javascript:void(0)" class="nav__side--link dropdown-btn">Career <i
+                                    class="flaticon-down-arrow float-right"></i></a>
+                            <div class="nav__side--dropdownContainer">
+                                <a class="nav__side--link" href="#">Courses</a>
+                                <a class="nav__side--link" href="#">Trainings</a>
+                                <a class="nav__side--link" href="#">Events</a>
+                            </div>
+                            <hr class="nav__side-hr">
+                            <a href="#" class="nav__side--link"><i class="flaticon-man-user nav__phoneIcon"></i>Join</a>
+                            <a href="javascript:void(0)" class=" nav__side--link dropdown-btn"> <i
+                                    class="flaticon-old-fashion-briefcase nav__phoneIcon"></i>Employer <i
+                                    class="flaticon-down-arrow float-right"></i></a>
+                            <div class="nav__side--dropdownContainer">
+                                <a class="nav__side--link" href="#">Join</a>
+                                <a class="nav__side--link" href="#">Sign up</a>
+                            </div>
+                            <a href="javascript:void(0)" class="nav__side--link"><i
+                                    class="flaticon-plus nav__phoneIcon"></i>Post a Job</a>
+                        </div>
+
+
+                    </nav>
+
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="content">
+        <div class="applied">
+            <!-- <div class="vacance__title">
+                <div class="container">
+                    <div class="vacance__title-name">
+                        <div class="vacance-name">
+                            <p>WEB DEVELOPER</p>
+                            <p>AvirDigital Agency</p>
+                        </div>
+                        <div class="vacance-salaryBox">
+                            <button id="popupApply__show" class="myBtn myBtn--white">APPLY</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="applied__form">
+                <div class="container">
+                    <div class="applied__title">
+                        <p>WEB DEVELOPER</p>
+                        <p>AvirDigital Agency</p>
+                    </div>
+                    <form>
+                        <div class="applied__form--inner">
+                            <h3 class="applied__form--title">BİLGİLERİNİZ</h3>
+                            <div class="applied__form--box">
+                                <div class="form__group">
+                                    <label for="selectCV" class="select2__label">Choose CV
+                                    </label>
+                                    <select class="select-resume" id="selectCV">
+                                        <option value=""></option>
+                                        <option value="highSchool">High School</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="WY">Wyoming</option>
+                                    </select>
+
+                                </div>
+                                <div class="applied__hintBox">
+                                    <a class="viewCV" href="#">view</a>
+                                    <button type="button" class="btn" data-toggle="popover" title="What are these" data-content="Please Choose your resume for applied employer ">?</button>
+                                </div>
+                            </div>
+                            <div class="applied__form--box">
+                                <div class="form__group">
+                                    <label for="coverLetter" class="select2__label">Choose cover letter
+                                    </label>
+                                    <select class="popup__select2 select" id="coverLetter">
+                                        <option value=""></option>
+                                        <option value="newCoverLetter">New cover letter</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="WY">Wyoming</option>
+                                    </select>
+                                </div>
+                                <div class="applied__hintBox">
+                                    <a class="viewCV" href="#">view</a>
+                                    <button type="button" class="btn" data-toggle="popover" title="What are these" data-content="Please choose your cover letter for applied employer ">?</button>
+                                </div>
+                            </div>
+                            <h3 class="applied__form--title"> FİRMANIN SORULARI</h3>
+                            <div class="applied__form--box ">
+                                <div class="form__group">
+                                    <label for="salary" class="select2__label">Choose salary
+                                    </label>
+                                    <select class="salary select" id="salary">
+                                        <option value=""></option>
+                                        <option value="newCoverLetter">New cover letter</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="WY">Wyoming</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__row--col">
+                        <div class="footer__logo">
+                            <img src="images/logo__footer.png" alt="">
+                        </div>
+                        <!-- <ul class="footer__list">
+                            <li><a class="footer__list--page-active" href="javascript:void(0)">Home</a></li>
+                            <li><a class="footer__list--page" href="javascript:void(0)">About us</a></li>
+                            <li><a class="footer__list--page" href="javascript:void(0)">Blog </a></li>
+                            <li><a class="footer__list--page" href="javascript:void(0)">Contact</a></li>
+                            <li><a class="footer__list--page" href="javascript:void(0)">Terms and Conditions</a></li>
+                            <li><a class="footer__list--page" href="javascript:void(0)">Help & FAQ</a></li>
+                        </ul> -->
+                    </div>
+                    <div class="footer__row--col">
+                        <ul class="footer__list">
+                            <!-- <li><span class="footer__list--title">Recent Jobs</span></li> -->
+                            <li><a class="footer__list--link" href="javascript:void(0)">Home</a></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)">About us</a></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__row--col">
+                        <ul class="footer__list">
+                            <!-- <li><span class="footer__list--title">Trainings</span></li> -->
+                            <li><a class="footer__list--link" href="javascript:void(0)">Contact</a></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)">Terms and Conditions</a></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)">Help & FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__row--col">
+                        <ul class="footer__list">
+                            <li><a class="footer__list--link" href="javascript:void(0)"><i
+                                        class="flaticon-close-envelope footer__list--icon"></i>info@jobustan.az</a></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)"><i
+                                        class="flaticon-phone-receiver footer__list--icon"></i>+994 55 123 45 67</a>
+                            </li>
+                            <li>
+                                <ul class="footer__list">
+                                    <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i
+                                                class="flaticon-instagram m"></i></a></li>
+                                    <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i
+                                                class="flaticon-facebook-logo m"></i></a></li>
+                                    <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i
+                                                class="flaticon-linkedin-logo m"></i></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="popup" id="popupCoverLetter">
+        <div class="popup__addResume popup__coverLetter">
+            <form>
+                <a href="#" id="popupApply--close" class="popup__close">&times;</a>
+
+                <div class="popup__addResume--content">
+
+                    <div class="popup__addResume--languagea mb-30 text-left">
+                        <div class="form__group">
+                            <input type="text" class="form__input" placeholder="Phone" id="candidatePhoneInput"
+                                required>
+                            <label for="candidatePhoneInput" class="form__label">Phone</label>
+                        </div>
+                    </div>
+                    <div class="popup__addResume--languagea  text-left">
+                        <div class="form-group">
+                            <textarea class="form__area form__textarea" id="description"
+                                placeholder="Description"></textarea>
+                            <label for="description" class="form__label-area">Description</label>
+                        </div>
+                    </div>
+                    <button id="popupCoverLetter--close" class="myBtn" type="button">OK</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+    <script src="libs/js/owl.carousel.min.js"></script>
+    <script src="libs/js/jquery.inputmask.bundle.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="libs/Croppie/croppie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.js"></script>
+    <script src="https://cdn.tiny.cloud/1/76tvlrphaq4ygs7tbtap1hyw4uh0x4mlbg59nyu1pobjcw4o/tinymce/5/tinymce.min.js"
+        referrerpolicy="origin"></script>
+    <script src="js/all.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $(".js-example-placeholder-single").select2({
+                placeholder: "Country",
+                allowClear: true,
+                tags: ['a', 'b', 'c'],
+                escapeMarkup: function (markup) { return markup; }
+            });
+            $(".js-example-placeholder-single1").select2({
+                placeholder: "Sity",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single2").select2({
+                placeholder: "Nationality",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single3").select2({
+                placeholder: "Salary",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single4").select2({
+                placeholder: "Driver's license",
+                allowClear: true,
+                tags: true
+            });
+            $(".select5").select2({
+                placeholder: "Military service",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single6").select2({
+                placeholder: "Category",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single7").select2({
+                placeholder: "Percent",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single8").select2({
+                placeholder: "Company name",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single9").select2({
+                placeholder: "Title",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single10").select2({
+                placeholder: "Company sector",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single11").select2({
+                placeholder: "Business Field ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single12").select2({
+                placeholder: "Job type ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single13").select2({
+                placeholder: "Sity ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single14").select2({
+                placeholder: "Education level ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single15").select2({
+                placeholder: "Graduation Degree Max* ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single16").select2({
+                placeholder: "Graduation Degree ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single17").select2({
+                placeholder: "University* ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single18").select2({
+                placeholder: "Faculty ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single19").select2({
+                placeholder: "Department ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single20").select2({
+                placeholder: "Education type* ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single21").select2({
+                placeholder: "Education Language ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single22").select2({
+                placeholder: "Scholarship Type*",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single23").select2({
+                placeholder: "Scholarship Rate ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single24").select2({
+                placeholder: "Minor Program* ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single25").select2({
+                placeholder: "Graduation Degree* ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single26").select2({
+                placeholder: "Double Major Faculty* ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single27").select2({
+                placeholder: "Minor Program* ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single28").select2({
+                placeholder: "Graduation Degree* ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-basic-multiple").select2({
+                placeholder: "You can edit your skills in your resume. ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single29").select2({
+                placeholder: "Language* ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single30").select2({
+                placeholder: "Level* ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single31").select2({
+                placeholder: "Exam name ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single32").select2({
+                placeholder: "Certificates name ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single33").select2({
+                placeholder: "Reference type ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single34").select2({
+                placeholder: "Language ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single35").select2({
+                placeholder: "Title ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single36").select2({
+                placeholder: "Company Sector ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single37").select2({
+                placeholder: "High school type ",
+                allowClear: true,
+                tags: true
+            });
+            $(".js-example-placeholder-single38").select2({
+                placeholder: "High school departament ",
+                allowClear: true,
+                tags: true
+            });
+            $(".popup__select1").select2({
+                placeholder: "Choose CV ",
+                allowClear: true,
+
+            });
+            $(".popup__select2").select2({
+                placeholder: "Choose cover letter",
+                allowClear: true,
+
+            });
+            $(".salary").select2({
+                placeholder: "Choose salary",
+                allowClear: true,
+
+            });
+            $(".select-resume").select2({
+                placeholder: "Select your CV ",
+                allowClear: true,
+                tags: true
+            });
+            $(".cv").select2({
+                placeholder: "Select",
+                allowClear: true,
+            });
+            $(".applications").select2({
+                placeholder: "Select",
+                allowClear: true,
+            });
+
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+.error{
+    font-family: 'Comfortaa';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-gray-light-2;
+
+    &__message1{
+        text-align: left;
+        font-size: 4.5rem;
+        p{
+            margin-top: 0;
+        }
+    }
+    &__message2{
+        text-align: center;
+        p:nth-child(1){
+            font-size: 15rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        p:nth-child(2){
+            font-size: 3.5rem;
+            
+        }
+    }
+    &__button{
+        font-size:1.8rem; 
+        margin-top: 4rem;
+        background-color: $color-gray-light-2;
+         color: $color-white;
+         border-radius: .6rem;
+         padding: .7rem 3rem;
+         border:unset;
+         cursor: pointer;
+         &:hover{
+            background-color: $color-primary-dark;
+        }
+    } 
+  
+}
+
+

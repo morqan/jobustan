@@ -1,0 +1,27 @@
+.event{
+    padding-bottom: 5rem;
+    &__info{
+        &-title{
+            color: $color-gray;
+            margin-bottom: 2.5rem;
+            &--2{
+                color: $color-primary-dark;
+                margin: 2rem 0;
+            }
+        }
+        &-text{
+            color: $color-gray;
+            font-size: 1.7rem;
+        }
+        &-field{
+            font-size: 1.7rem;
+            color: $color-gray;
+            line-height: 2.5rem;
+        }
+    }
+    &__card{
+        &-img{
+            margin-bottom: 2rem;
+        }
+    }
+}

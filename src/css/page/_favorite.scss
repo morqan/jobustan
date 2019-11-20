@@ -1,0 +1,68 @@
+.favorites{
+    &__header{
+        text-align: center;
+        color: $color-gray;
+        font-size: 2rem;
+        font-weight: normal;
+        font-family: Comfortaa-b;
+
+        &--main{
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+
+.jobs{
+    &__card{
+        border: 1px solid $color-gray;
+        border-radius: 1rem;
+        padding: 2.7rem 1.5rem 2rem;
+        text-align: center;
+        margin-bottom: 2.2rem;
+
+        @include respond(phone){
+            padding: 3rem;
+        }
+    }
+
+    &__name{
+        font-size: 1.5rem;
+        color: $color-gray-dark;
+        margin-bottom: 2.4rem;
+        font-family: Comfortaa-b;
+    }
+
+    &__agency{
+        font-size: 1.3rem;
+        color: $color-gray-light-7;
+        margin-bottom: 1.6rem;
+        font-family: Comfortaa-r;
+
+    }
+
+    &__price{
+        color: $color-primary-dark;
+        font-size: 2.1rem;
+        margin-bottom: 2.1rem;
+        display: block;
+        font-weight: 500;
+    }
+
+    &__link{
+        color: $color-primary-dark!important;
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-family: Comfortaa-b;
+    }
+
+    &__icon{
+        text-align: right;
+        color: $color-primary;
+        float: right;
+        cursor: pointer;
+        // vertical-align: middle;
+    }
+}
+

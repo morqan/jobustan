@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My resume</title>
+    <link rel="stylesheet" href="libs/default.css?v1.1">
+    <link rel="stylesheet" type="text/css" href="libs/normalize.css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="css/main/main.css?v1.93">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <a class="navbar-brand" href="#"><img src="images/job-logo.png" alt=""></a>
+
+
+                    <ul class="navbar-nav ml-auto nav__box">
+                        <li class="nav-item nav__item dropdown ">
+                            <a class="nav__link  nav__link--active" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Jobs
+                            </a>
+                            <div class="dropdown-menu  nav__dropdownMenu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Premium</a>
+                                <a class="dropdown-item" href="#">VIP</a>
+                                <a class="dropdown-item" href="#">Regular</a>
+                            </div>
+                        </li>
+                        <li class="nav-item nav__item dropdown">
+                            <a class="nav__link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Career
+                            </a>
+                            <div class="dropdown-menu nav__dropdownMenu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Courses</a>
+                                <a class="dropdown-item" href="#">Trainings</a>
+                                <a class="dropdown-item" href="#">Events</a>
+                            </div>
+                        </li>
+                        <li class="nav-item nav__item"><a class="nav__link nav__link--border" href=""><i
+                                    class="flaticon-man-user nav__icon"></i>Join</a></li>
+                        <li class="nav-item nav__item dropdown">
+                            <a class="nav__link  nav__link--border-gray " href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="flaticon-old-fashion-briefcase nav__icon"></i> Employer
+                            </a>
+                            <div class="dropdown-menu nav__dropdownMenu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Join</a>
+                                <a class="dropdown-item" href="#">Sign up</a>
+                            </div>
+                        </li>
+                        <li class="nav-item nav__item"><a class="nav__link nav__link--border-gray" href="">
+                                <i class="flaticon-plus nav__icon"></i>Post a Job</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <button class="navbar-toggler" type="button" id="openHeader">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="nav-item nav__item dropdown ">
+                            <a class="nav__link nav__link--red " href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                EN
+                            </a>
+                            <div class="dropdown-menu nav__dropdownMenu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">AZ</a>
+                                <a class="dropdown-item" href="#">RU</a>
+                                <a class="dropdown-item" href="#">EN</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sideMenu" class="nav__side">
+                        <a href="javascript:void(0)" class="nav__side--closeBtn" id="closeHeader">&times;</a>
+                        <a href="javascript:void(0)" class="nav__side--link dropdown-btn">Jobs <i
+                                class="flaticon-down-arrow float-right"></i></a>
+                        <div class="nav__side--dropdownContainer">
+                            <a class="nav__side--link" href="#">Premium</a>
+                            <a class="nav__side--link" href="#">VIP</a>
+                            <a class="nav__side--link" href="#">Regular</a>
+                        </div>
+                        <a href="javascript:void(0)" class="nav__side--link dropdown-btn">Career <i
+                                class="flaticon-down-arrow float-right"></i></a>
+                        <div class="nav__side--dropdownContainer">
+                            <a class="nav__side--link" href="#">Courses</a>
+                            <a class="nav__side--link" href="#">Trainings</a>
+                            <a class="nav__side--link" href="#">Events</a>
+                        </div>
+                        <hr class="nav__side-hr">
+                        <a href="#" class="nav__side--link"><i class="flaticon-man-user nav__icon"></i>Join</a>
+                        <a href="javascript:void(0)" class=" nav__side--link dropdown-btn"> <i
+                                class="flaticon-old-fashion-briefcase nav__icon"></i>Employer <i
+                                class="flaticon-down-arrow float-right"></i></a>
+                        <div class="nav__side--dropdownContainer">
+                            <a class="nav__side--link" href="#">Join</a>
+                            <a class="nav__side--link" href="#">Sign up</a>
+                        </div>
+                        <a href="javascript:void(0)" class="nav__side--link"><i class="flaticon-plus nav__icon"></i>Post
+                            a Job</a>
+                    </div>
+
+
+                </nav>
+
+            </div>
+        </div>
+    </header>
+    <div>
+        <div class="content">
+            <main>
+                <section>
+                    <div class="myResume">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8 col-lg-9">
+                                    <div class="myResume__box">
+                                        <a href="google.com" class="myResume__box--left">
+                                            <div class="myResume__title">
+                                                <p class="myResume__title--name" data-id="1">Front-end developer</p>
+                                                <p class="myResume__title--lastUpDate">Son Güncelleme 7 Mart 2019</p>
+                                            </div>
+                                        </a>
+                                        <div class="myResume__seating">
+                                            <div class="myResume__type">
+                                                <i class="flaticon-export"></i>
+                                            </div>
+                                            <div class="vision">
+                                                <a href="javascript:void(0)" class="vision__link">
+
+                                                    <span class="vision__link--span">
+                                                        Tüm Firmalar
+                                                    </span>
+                                                </a>
+                                                <div class="visionlist">
+                                                    <ul class="visionlist__menu">
+                                                        <li class=" visionlist__menu--noback ">Özgeçmiş Görünüm Ayarları
+                                                        </li>
+
+                                                        <li class="visionlist__menu--item">
+                                                            <a class="visionlist__menu--link visionlist__menu--link--1"
+                                                                href="#">
+
+                                                                <strong
+                                                                    class="visionlist__menu--strong icon__color--1">Herkese
+                                                                    Acik</strong>
+                                                                <span class="visionlist__menu--span">
+                                                                    Özgeçmişin Kariyer.net'teki firmalarla birlikte
+                                                                    internetteki herkes
+                                                                    tarafından
+                                                                    görüntülenir
+                                                                </span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="visionlist__menu--item">
+                                                            <a class="visionlist__menu--link visionlist__menu--link--1"
+                                                                href="#">
+
+                                                                <strong
+                                                                    class="visionlist__menu--strong icon__color--2">Herkese
+                                                                    Acik</strong>
+                                                                <span class="visionlist__menu--span">
+                                                                    Özgeçmişin Kariyer.net'teki firmalarla birlikte
+                                                                    internetteki herkes
+                                                                    tarafından
+                                                                    görüntülenir
+                                                                </span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="visionlist__menu--item">
+                                                            <a class="visionlist__menu--link visionlist__menu--link--1"
+                                                                href="#">
+
+                                                                <strong
+                                                                    class="visionlist__menu--strong icon__color--3">Herkese
+                                                                    Acik</strong>
+                                                                <span class="visionlist__menu--span">
+                                                                    Özgeçmişin Kariyer.net'teki firmalarla birlikte
+                                                                    internetteki herkes
+                                                                    tarafından
+                                                                    görüntülenir
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="setting">
+                                                <i class="setting--icon flaticon-ellipsis"></i>
+                                                <div class="settingList">
+                                                    <ul class="settingList__menu">
+                                                        <li class="settingList__menu--item">
+                                                            <a href="#" class="settingList__menu--link">
+                                                                <i class="settingList__menu--icon "></i>
+                                                                Edit
+                                                            </a>
+                                                        </li>
+                                                        <li class="settingList__menu--item">
+                                                            <a href="#" class="settingList__menu--link">
+                                                                <i class="settingList__menu--icon "></i>
+                                                                Görüntülər
+                                                            </a>
+                                                        </li>
+                                                        <li class="settingList__menu--item">
+                                                            <a href="#" class="settingList__menu--link">
+                                                                <i class="settingList__menu--icon "></i>
+                                                                <span class="settingList__menu--span">Paylaş</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="settingList__menu--item">
+                                                            <a href="#" class="settingList__menu--link">
+                                                                <i class="settingList__menu--icon fas fa-pen"></i>
+                                                                <span class="settingList__menu--span">İsim
+                                                                    dəyişdir</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="settingList__menu--item">
+                                                            <a href="#" class="settingList__menu--link">
+                                                                <i class="settingList__menu--icon fas fa-print"></i>
+                                                                <span class="settingList__menu--span">Yazdır</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="settingList__menu--item">
+                                                            <a href="#" class="settingList__menu--link">
+                                                                <i class="settingList__menu--icon fas fa-file-pdf"></i>
+                                                                <span class="settingList__menu--span">Pdf</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="settingList__menu--item">
+                                                            <a href="#" class="settingList__menu--link">
+                                                                <i class="settingList__menu--icon far fa-trash-alt"></i>
+                                                                <span class="settingList__menu--span">Sil</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="myResume__box">
+                                        <a href="google.com" class="myResume__box--left">
+                                            <div class="myResume__title">
+                                                <p class="myResume__title--name" data-id="2">Front-end developer</p>
+                                                <p class="myResume__title--lastUpDate">Son Güncelleme 7 Mart 2019</p>
+                                            </div>
+                                        </a>
+                                        <div class="myResume__seating">
+                                            <div class="myResume__type">
+                                                <i class="flaticon-export"></i>
+                                            </div>
+                                            <div class="vision">
+                                                <a href="javascript:void(0)" class="vision__link">
+                                                    <i class="vision__link--icon fas fa-street-view"></i>
+                                                    <span class="vision__link--span">
+                                                        Müraciət etdiklerim
+                                                    </span>
+                                                </a>
+
+
+                                                <div class="visionlist">
+                                                    <ul class="visionlist__menu">
+                                                        <li class=" visionlist__menu--noback ">Özgeçmiş Görünüm Ayarları
+                                                        </li>
+
+                                                        <li class="visionlist__menu--item">
+                                                            <a class="visionlist__menu--link visionlist__menu--link--1"
+                                                                href="#">
+
+                                                                <strong
+                                                                    class="visionlist__menu--strong icon__color--1">Herkese
+                                                                    Acik</strong>
+                                                                <span class="visionlist__menu--span">
+                                                                    Özgeçmişin Kariyer.net'teki firmalarla birlikte
+                                                                    internetteki herkes
+                                                                    tarafından
+                                                                    görüntülenir
+                                                                </span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="visionlist__menu--item">
+                                                            <a class="visionlist__menu--link visionlist__menu--link--1"
+                                                                href="#">
+
+                                                                <strong
+                                                                    class="visionlist__menu--strong icon__color--2">Herkese
+                                                                    Acik</strong>
+                                                                <span class="visionlist__menu--span">
+                                                                    Özgeçmişin Kariyer.net'teki firmalarla birlikte
+                                                                    internetteki herkes
+                                                                    tarafından
+                                                                    görüntülenir
+                                                                </span>
+                                                            </a>
+                                                        </li>
+
+                                                        <li class="visionlist__menu--item">
+                                                            <a class="visionlist__menu--link visionlist__menu--link--1"
+                                                                href="#">
+
+                                                                <strong
+                                                                    class="visionlist__menu--strong icon__color--3">Herkese
+                                                                    Acik</strong>
+                                                                <span class="visionlist__menu--span">
+                                                                    Özgeçmişin Kariyer.net'teki firmalarla birlikte
+                                                                    internetteki herkes
+                                                                    tarafından
+                                                                    görüntülenir
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="setting">
+                                                <i class="setting--icon flaticon-ellipsis"></i>
+                                                <div class="settingList">
+                                                    <ul class="settingList__menu">
+                                                        <li class="settingList__menu--item">
+                                                            <a href="#" class="settingList__menu--link">
+                                                                <i class="settingList__menu--icon far fa-eye"></i>
+                                                                Görüntülər
+                                                            </a>
+                                                        </li>
+                                                        <li class="settingList__menu--item">
+                                                            <a href="#" class="settingList__menu--link">
+                                                                <i class="settingList__menu--icon fab fa-usps"></i>
+                                                                <span class="settingList__menu--span">Paylaş</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="settingList__menu--item">
+                                                            <a href="#" class="settingList__menu--link rename"
+                                                                data-id="2">
+                                                                <i class="settingList__menu--icon fas fa-pen"></i>
+                                                                <span class="settingList__menu--span">İsim
+                                                                    dəyişdir</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="settingList__menu--item">
+                                                            <a href="#" class="settingList__menu--link">
+                                                                <i class="settingList__menu--icon fas fa-print"></i>
+                                                                <span class="settingList__menu--span">Yazdır</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="settingList__menu--item">
+                                                            <a href="#" class="settingList__menu--link">
+                                                                <i class="settingList__menu--icon fas fa-file-pdf"></i>
+                                                                <span class="settingList__menu--span">Pdf</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="settingList__menu--item">
+                                                            <a href="#"
+                                                                class="settingList__menu--link removeThisResume">
+                                                                <i class="settingList__menu--icon far fa-trash-alt"></i>
+                                                                <span class="settingList__menu--span">Sil</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-3">
+                                    <div class="myResume__additions">
+                                        <div class="myResume__addCoverLetter">
+                                            <div class="myResume__addNewResume">
+                                                <a class="myResume__addNewResume--link" href="#"
+                                                    id="popup__addResume--show">
+                                                    <i class="flaticon-plus myResume__addNewResume--icon"></i>Add new CV
+                                                </a>
+                                            </div>
+                                            <div class="myResume__addCoverLetter--textBox">
+                                                <p class="myResume__addCoverLette--text">Önyazısı olan adaylar bir adım
+                                                    önde; sen de önyazını yaz, kendini göster</p>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="myResume__addCoverLetter">
+                                            <div class="myResume__addCoverLetter--linkBox">
+                                                <a href="#" id="popupCover--show"
+                                                    class="myResume__addCoverLetter--link">
+                                                    <i class="flaticon-plus myResume__addNewResume--icon"></i>
+                                                    upload cv
+                                                </a>
+                                            </div>
+                                            <div class="myResume__addCoverLetter--textBox">
+                                                <p class="myResume__addCoverLette--text">Önyazısı olan adaylar bir adım
+                                                    önde; sen de önyazını yaz, kendini göster</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="myResume__addCoverLetter">
+                                            <div class="myResume__addCoverLetter--linkBox">
+                                                <a href="#" id="popupCover--show"
+                                                    class="myResume__addCoverLetter--link">
+                                                    <i class="flaticon-plus myResume__addNewResume--icon"></i>
+                                                    Yeni Önyazı Ekle
+                                                </a>
+                                            </div>
+                                            <div class="myResume__addCoverLetter--textBox">
+                                                <h3 class="myResume__addCoverLetter--title">Önyazılarım</h3>
+                                                <p class="myResume__addCoverLette--text">Önyazısı olan adaylar bir adım
+                                                    önde; sen de önyazını yaz, kendini göster</p>
+                                                <ul class="myResume__addCoverLetter--list">
+                                                    <li>
+                                                        <strong class="myResume__addCoverLetter--listTitle">front <i
+                                                                class="myResume__addCoverLetter--listIcon flaticon-edit"></i>
+                                                        </strong>
+                                                        <p class="letter__contect">Lorem ipsum dolor, sit amet
+                                                            consectetur adipisicing elit. Deserunt, ut!</p>
+                                                    </li>
+                                                    <li>
+                                                        <strong class="myResume__addCoverLetter--listTitle">front <i
+                                                                class="myResume__addCoverLetter--listIcon flaticon-edit"></i>
+                                                        </strong>
+                                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                                            Deserunt, ut!</p>
+                                                    </li>
+                                                    <li>
+                                                        <strong class="myResume__addCoverLetter--listTitle">front <i
+                                                                class="myResume__addCoverLetter--listIcon flaticon-edit"></i>
+                                                        </strong>
+                                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                                            Deserunt, ut!</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__row--col">
+                        <ul class="footer__list">
+                            <li><a class="footer__list--page" href="javascript:void(0)">Home</a></li>
+                            <li><a class="footer__list--page" href="javascript:void(0)">About us</a></li>
+                            <li><a class="footer__list--page" href="javascript:void(0)">Blog </a></li>
+                            <li><a class="footer__list--page" href="javascript:void(0)">Contact</a></li>
+                            <li><a class="footer__list--page" href="javascript:void(0)">Terms and Conditions</a></li>
+                            <li><a class="footer__list--page" href="javascript:void(0)">Help & FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__row--col">
+                        <ul class="footer__list">
+                            <li><span class="footer__list--title">Recent Jobs</span></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)">Premium jobs</a></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)">VIP jobs </a></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)">Regular jobs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__row--col">
+                        <ul class="footer__list">
+                            <li><span class="footer__list--title">Trainings</span></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)">Free trainings</a></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)">Discounted trainings</a></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)">Tam qiymt</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__row--col">
+                        <ul class="footer__list">
+                            <li><a class="footer__list--link" href="javascript:void(0)"><i
+                                        class="flaticon-close-envelope footer__list--icon"></i>info@jobustan.az</a></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)"><i
+                                        class="flaticon-call-answer footer__list--icon"></i>+994 55 123 45 67</a></li>
+                            <li>
+                                <ul class="footer__list">
+                                    <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i
+                                                class="flaticon-instagram m"></i></a></li>
+                                    <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i
+                                                class="flaticon-facebook-logo m"></i></a></li>
+                                    <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i
+                                                class="flaticon-linkedin-logo m"></i></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup" id="popup__addResume">
+        <div class="popup__addResume">
+            <form>
+                <a href="#" id="popupClose" class="popup__close popup__close--primaryDark">&times;</a>
+                <div class="popup__addResume--header">
+                    <h3 class="popup__addResume--title">Fərqli bir CV adı daxil edin :</h3>
+
+                    <div class="form__group">
+                        <input type="text" class="form__input" placeholder="CV adlandırın" id="cvName" required>
+                        <label for="cvName" class="form__label">CV adlandırın</label>
+                    </div>
+
+                </div>
+                <div class="popup__addResume--content">
+                    <h3 class=" mb-30">Choose your CV language</h3>
+                    <div class="popup__addResume--languagea">
+                        <div class="form__group form__group-flex mb-30">
+                            <div class="form__radio-group">
+                                <input type="radio" required class="form__radio-input" id="Azerbaijani" name="size">
+                                <label for="Azerbaijani" class="form__radio-label">Azerbaijani</label>
+                            </div>
+                            <div class="form__radio-group">
+                                <input type="radio" required class="form__radio-input" id="Russian" name="size">
+                                <label for="Russian" class="form__radio-label">Russian</label>
+                            </div>
+                            <div class="form__radio-group">
+                                <input type="radio" class="form__radio-input" id="English" name="size">
+                                <label for="English" class="form__radio-label">English</label>
+                            </div>
+                        </div>
+                        <button class="myBtn mr-30" id="popup__addResume--cansel" type="button">Cansel</button>
+                        <button class="myBtn te" type="button">Yarat</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="popup" id="popupCover">
+        <div class="popup__addResume popup__coverLetter">
+            <form id="coverletterForm">
+                <a href="#" id="popupCover--close" class="popup__close popup__close--primaryDark">&times;</a>
+                <div class="popup__addResume--header">
+                    <h3 class="popup__addResume--title">Onyazinla ferqini ortaya qoy!</h3>
+
+                    <div class="form__group">
+                        <input type="text" maxlength="50" class="form__input letterTitle"
+                            placeholder="Onyazini adlandırın" id="cvName" required>
+                        <label for="cvName" class="form__label">Onyazini adlandırın</label>
+                        <p class="countcharacters text-right">
+                            <span class="countcharacters--live9">0</span>
+                            <span class="countcharacters--max">/50</span>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="popup__addResume--content">
+                    <h3 class="text-left mb-10">Onyazini daxil et</h3>
+                    <div class="popup__addResume--languagea">
+                        <textarea maxlength="1000" class="form__textarea text__count"></textarea>
+                        <p class="countcharacters text-right">
+                            <span class="countcharacters--live6">0</span>
+                            <span class="countcharacters--max">/1000</span>
+                        </p>
+
+                        <h5 class="popup__coverLetteHint--title">Kisaca kendini anlat</h5>
+                        <div class="popup__coverLetteHint">
+                            <p>
+                                Özgeçmişin kısa bir versiyonu olan
+                                Kendini ön plana çıkarabileceğin kısa bir önyazıyla işverenlerin dikkatini çekmeye ne
+                                dersin?.
+                                Önyazı özgeçmişinin kısa bir versiyonudur ve firmalar seni ilk kez önyazını okuyarak
+                                değerlendirir.
+                            </p>
+                        </div>
+                        <button class="myBtn mr-30 " id="popupCover--cansel" type="button">Cansel</button>
+                        <button class="myBtn " type="button">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="SecondPopup">
+        <div class="SecondPopup__content">
+            <div class="SecondPopup__content--header">
+                <h3 class="SecondPopup__content--header-title">Özgeçimi sil</h3>
+
+                <span class="SecondPopup__content--header-icon flaticon-cancel"></span>
+            </div>
+            <h4 class="SecondPopup__content--subtitle">
+                <i class="far fa-trash-alt"></i> Öz geçmişin silinəcək
+            </h4>
+
+            <p class="SecondPopup__content--text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt
+            </p>
+
+            <div class="SecondPopup__content--btn">
+                <a href="#"
+                    class="SecondPopup__content--btn-link  SecondPopup__content--btn-link-efect removeResume ">sil</a>
+                <a href="#" class="SecondPopup__content--btn-link closeRemovePopup">vazgec</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="ThertyPopup">
+        <div class="ThertyPopup__content">
+
+            <div class="ThertyPopup__content--header">
+                <h3 class="ThertyPopup__content--header-title">Onyazini deyisdir</h3>
+
+                <span class="ThertyPopup__content--header-icon flaticon-cancel "></span>
+            </div>
+
+
+            <form>
+                <div class="form-group form__group ThertyPopup__marg">
+                    <input type="text" class="form__input" placeholder="CV adlandırın" id="renameCv">
+                    <label for="renameCv" class="form__label">Onyazini adlandırın</label>
+                </div>
+            </form>
+
+            <div class="ThertyPopup__content--btn">
+                <a href="#" class="ThertyPopup__content--btn-link  ThertyPopup__content--btn-link-efect ">save</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+    <script src="libs/js/owl.carousel.min.js"></script>
+    <script src="libs/js/jquery.inputmask.bundle.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="libs/Croppie/croppie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.js"></script>
+    <script src="js/all.js"></script>
+</body>
+
+</html>

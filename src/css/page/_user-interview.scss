@@ -1,0 +1,46 @@
+.interview{
+
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 4rem;
+        font-size: 1.8rem;
+        align-items: center;
+        line-height: 1.8rem;
+         color: $color-primary-dark;
+        box-shadow: 0px 8px 18.9px 2.1px rgba(67, 67, 67, 0.09);
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+        @include respond(phone) {
+            display: block;
+          }
+    }
+
+    &__compName{
+        @include respond(phone) {
+            text-align: center;
+            margin-bottom: 3.5rem;
+          }
+    }
+
+    &__date{
+        &--day{
+            margin-right: 8rem;
+            color: $color-gray;
+            i::before{
+                margin-right: 1rem;
+                color: $color-primary-dark;
+
+            }
+        }
+        &--time{
+            color: $color-gray;
+            i::before{
+                margin-right: 1rem;
+                color: $color-primary-dark;
+            }
+        }
+    }
+}
+
+  

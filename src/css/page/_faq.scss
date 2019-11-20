@@ -1,0 +1,74 @@
+.acardion {
+    
+    margin-bottom: 2rem;
+
+    &__btn {
+        background-color: $color-white;
+        color: $color-gray-dark;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        padding: 1rem 3rem;
+       
+        width: 100%;
+        border: 1px solid $color-gray-light-2 ;
+        font-size: 1.8rem;
+        font-family: 700;
+        transition: 0.4s;
+
+        &--icon{
+            color:$color-primary-dark;
+            transition: 0.4s;
+            &-white{
+                color:$color-white;
+            }
+        }
+
+        &:hover &--icon{
+            color: #fff;
+        }
+        &:hover{
+            background: $color-primary-dark;
+        }
+
+        &:focus{
+            outline: none;
+        }
+
+       
+
+       
+    }
+
+  
+
+    &__active,&__btn:hover
+     {
+        background-color: $color-primary-dark;
+        color: $color-white;
+        outline: none;
+        border: 1px solid $color-primary-dark!important;
+    }
+
+
+  
+
+
+    &__panel {
+        padding: 2rem;
+        display: none;
+        overflow: hidden;
+        border: 1px solid $color-gray-light-2;
+        border-top: none;
+
+        &--text {
+            color: $color-gray-dark;
+            text-align: justify;
+            font-size: 1.5rem;
+        }
+
+    }
+
+
+}

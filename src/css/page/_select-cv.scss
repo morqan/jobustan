@@ -1,0 +1,108 @@
+.select-cv{
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+
+
+    &__titleBox{
+        display: flex;
+        margin-bottom: 2rem;
+    }
+
+    &__title{
+        color: $color-gray;
+        margin-right: 2rem;
+    }
+
+    &__linkBox{
+        // margin: 1rem;
+        // border: 1px solid $color-primary-dark;
+        // border-radius: 1rem;
+        // padding: 1rem;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // height: 10rem;
+    }
+
+    &__link{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        color: $color-gray;
+        margin: 1rem;
+        // padding: 1rem 3rem;
+        height: 10rem;
+        border: 1px solid $color-primary-dark;
+        border-radius: 1rem;
+        font-size: 1.6rem;
+        color: $color-gray;
+
+        i:before{
+            font-size: 2.5rem;
+        }
+
+        &:hover{
+            background-color:  $color-primary-dark;
+            color: $color-white;
+        }
+    }
+}
+
+
+
+
+.select-cv__carouselBox{
+    position: relative;
+
+    &--1{
+        position: relative;
+    }
+
+    .owl-theme {
+        .custom-nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+
+            &--1{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+
+            .owl-prev, .owl-next {
+                position: absolute;
+                height: 100px;
+                color: inherit;
+                background: none;
+                border: none;
+                z-index: 100;
+
+                i {
+                    font-size: 2.5rem;
+                    color: #cecece;
+                }
+            }
+
+            .owl-prev {
+                left: -3.5rem;
+                
+                i:before{
+                    font-size: 3rem;
+                    color: $color-primary-dark;
+                }
+            }
+
+            .owl-next {
+                right: -3.5rem;
+                i:before{
+                    font-size: 3rem;
+                    color: $color-primary-dark;
+                }
+            }
+        }
+    }
+}
