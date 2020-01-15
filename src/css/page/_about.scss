@@ -1,39 +1,39 @@
 .about{
-    padding: 50px 0;
+  padding: 50px 0;
 &__title{
-    color: #f71c52;
-    font-size: 2.3rem;
-    line-height: 3.5rem;
-    font-family: comfortaa-r;
-    text-align: left;
-    // padding: 3rem 0;
+  color: #f71c52;
+  font-size: 2.3rem;
+  line-height: 3.5rem;
+  font-family: comfortaa-r;
+  text-align: left;
+  // padding: 3rem 0;
 }
-    &__text{
-        color: #a9a9a9;
-        font-size: 1.6rem;
-        font-family: comfortaa-r;
-        padding-right: 5rem;
-        text-align: justify;
-        ul{
-          list-style: none;
-          font-family: comfortaa-b;
-          font-size: 1.5rem;
-        }
-    }
+  &__text{
+      color: #a9a9a9;
+      font-size: 1.6rem;
+      font-family: comfortaa-r;
+      padding-right: 5rem;
+      text-align: justify;
+      ul{
+        list-style: none;
+        font-family: comfortaa-b;
+        font-size: 1.5rem;
+      }
+  }
 }
 
 
 /* ABOUT */
 .button-group
 {
-  padding-top: 25px;
-  float: left;
+padding-top: 25px;
+float: left;
 
 }
 .button-group button
 {
-  
-  padding: 1rem 4rem;
-  text-transform: uppercase;
-  font-size: 1.5rem;
+
+padding: 1rem 4rem;
+text-transform: uppercase;
+font-size: 1.5rem;
 }

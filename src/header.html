@@ -25,10 +25,8 @@
         <header>
             <div class="header">
                 <div class="container">
-                    <nav class="navbar navbar-expand-lg navbar-light ">
-                        <a class="navbar-brand" href="#"><img src="images/job-logo.png" alt=""></a>
-
-
+                    <nav class="navbar navbar-expand-lg navbar-light header-nav ">
+                        <a class="navbar-brand" href="#"><img src="images/job-logo.png" alt="logo"></a>
                         <ul class="navbar-nav ml-auto nav__box mr-3">
                             <li class="nav-item nav__item dropdown ">
                                 <a class="nav__link  nav__link--active" href="#" id="navbarDropdown" role="button"
@@ -106,7 +104,7 @@
                                 <a class="nav__side--link" href="#">Trainings</a>
                                 <a class="nav__side--link" href="#">Events</a>
                             </div>
-                            <hr class="nav__side-hr">
+                          
                             <a href="#" class="nav__side--link"><i class="flaticon-man-user nav__phoneIcon"></i>Join</a>
                             <a href="javascript:void(0)" class=" nav__side--link dropdown-btn"> <i
                                     class="flaticon-old-fashion-briefcase nav__phoneIcon"></i>Employer <i
@@ -118,14 +116,115 @@
                             <a href="javascript:void(0)" class="nav__side--link"><i
                                     class="flaticon-plus nav__phoneIcon"></i>Post a Job</a>
                         </div>
-
-
                     </nav>
-
                 </div>
             </div>
         </header>
     </div>
+<!-- SEARCH INPUT-->
+
+<header>
+    <div  id="header" class="header">
+        <div class="container">
+        <nav class="header-nav navbar navbar-expand-lg navbar-light" >
+            <a class="navbar-brand" href="#"><img src="images/job-logo.png" alt="logo"></a>  
+            <ul class="navbar-nav ml-auto nav__box mr-5">
+                <li class="nav-item nav__item dropdown ">
+                    <a class="nav__link  nav__link--active" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Jobs
+                    </a>
+                    <!-- <div class="dropdown-menu  nav__dropdownMenu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Premium</a>
+                        <a class="dropdown-item" href="#">VIP</a>
+                        <a class="dropdown-item" href="#">Regular</a>
+                    </div> -->
+                </li>
+                <li class="nav-item nav__item dropdown">
+                    <a class="nav__link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Career
+                    </a>
+                    <!-- <div class="dropdown-menu nav__dropdownMenu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Courses</a>
+                        <a class="dropdown-item" href="#">Trainings</a>
+                        <a class="dropdown-item" href="#">Events</a>
+                    </div> -->
+                </li>
+                <li class="nav-item nav__item">
+                    <a class="nav__link nav__link--border" href="">
+                        <i class="flaticon-man-user nav__icon"></i>Join
+                    </a>
+                </li>
+                <li class="nav-item nav__item dropdown">
+                    <a class="nav__link  nav__link--border-gray " href="jobs-search.html"
+                        id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="flaticon-old-fashion-briefcase nav__icon"></i> Employer
+                    </a>
+                    <!-- <div class="dropdown-menu nav__dropdownMenu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Join</a>
+                        <a class="dropdown-item" href="#">Sign up</a>
+                    </div> -->
+                </li>
+                <li class="nav-item nav__item">
+                    <a class="nav__link nav__link--border-gray" href="">
+                        <i class="flaticon-plus nav__icon"></i>Post a Job
+                    </a>
+                </li>
+            </ul>   
+            <form class="search-box">
+              <input type="text" class="text search-input" placeholder="Type here to search..." />
+            </form>
+            <div class="search-button">
+                <a href="#" class="search-toggle" data-selector="#header"></a>
+              </div>
+            <div class="d-flex">
+                <button class="navbar-toggler" type="button" id="openHeader">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <select class="select-language">
+                    <option>EN</option>
+                    <option>AZ</option>
+                    <option>RU</option>
+                </select>
+            </div>
+            <div id="sideMenu" class="nav__side">
+                <a href="javascript:void(0)" class="nav__side--closeBtn" id="closeHeader">&times;</a>
+                <a href="javascript:void(0)" class="nav__side--link dropdown-btn">Jobs <i
+                        class="flaticon-down-arrow float-right"></i></a>
+                <div class="nav__side--dropdownContainer">
+                    <a class="nav__side--link" href="#">Premium</a>
+                    <a class="nav__side--link" href="#">VIP</a>
+                    <a class="nav__side--link" href="#">Regular</a>
+                </div>
+                <a href="javascript:void(0)" class="nav__side--link dropdown-btn">Career <i
+                        class="flaticon-down-arrow float-right"></i></a>
+                <div class="nav__side--dropdownContainer">
+                    <a class="nav__side--link" href="#">Courses</a>
+                    <a class="nav__side--link" href="#">Trainings</a>
+                    <a class="nav__side--link" href="#">Events</a>
+                </div>
+                <hr class="nav__side-hr">
+                <a href="#" class="nav__side--link"><i class="flaticon-man-user nav__phoneIcon"></i>Join</a>
+                <a href="javascript:void(0)" class=" nav__side--link dropdown-btn"> <i
+                        class="flaticon-old-fashion-briefcase nav__phoneIcon"></i>Employer <i
+                        class="flaticon-down-arrow float-right"></i></a>
+                <div class="nav__side--dropdownContainer">
+                    <a class="nav__side--link" href="#">Join</a>
+                    <a class="nav__side--link" href="#">Sign up</a>
+                </div>
+                <a href="javascript:void(0)" class="nav__side--link"><i
+                        class="flaticon-plus nav__phoneIcon"></i>Post a Job</a>
+            </div>
+          </nav>
+          </div>
+    </div>
+   
+  </header>
+
+  
     <header>
         <div class="header">
             <div class="container-box">
@@ -337,8 +436,8 @@
         </div>
     </header>
 
-
-
+      
+      
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

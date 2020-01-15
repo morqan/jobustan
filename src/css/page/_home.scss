@@ -229,6 +229,13 @@
           }
        
         &--People {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            @include respond(main-img-resp-1) {
+               justify-content: center;
+              }
            
 
             &--link,
@@ -252,6 +259,9 @@
                 }
                 &:not(:last-child) {
                     margin-right: 2.5rem;
+                    @include respond(main-img-resp-1) {
+                      margin-right: 0;
+                       }
                   }
                 @include respond(phone) {
                     width: 100%;
@@ -260,6 +270,10 @@
                         margin-right: 0;
                       }
                   }
+
+                  @include respond(tab-port) {
+                  margin-bottom: 1rem;
+                }
             }
 
            
