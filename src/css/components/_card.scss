@@ -108,7 +108,7 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
                 padding: 0 1rem;
-                text-transform: lowercase;
+                // text-transform: lowercase;
                 &:first-letter {
                     text-transform: uppercase;
                   }
@@ -281,6 +281,12 @@
         &__lightGray{
             color: $color-gray-dark;
             font-size: 1.36rem;
+
+            p{
+                &:first-letter {
+                    text-transform: uppercase;
+                  }
+            }
         }
         
     }

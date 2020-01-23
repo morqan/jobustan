@@ -3,24 +3,6 @@
 }
 
 
-// example
-
-
-// @mixin cf {
-
-// 	&:before,
-// 	&:after {
-// 		content: '';
-// 		display: table;
-// 	}
-
-// 	&:after {
-// 		clear: both;
-// 	}
-// }
-
-
-
 .header-nav {
 	display: flex;
 	align-items: center;
@@ -172,7 +154,7 @@
 
 		.search-box {
 			max-height: 40px;
-
+z-index: 999;
 			.search-input {
 				opacity: 1;
 			}
