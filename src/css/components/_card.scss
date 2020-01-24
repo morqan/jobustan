@@ -95,6 +95,9 @@
             // &:first-letter {
             //     text-transform: uppercase;
             //   }
+            @include respond(big-desktop) {
+                height: 6.5rem;
+              }
         }
         @include respond(tab-port) {
             padding-bottom: 0;
