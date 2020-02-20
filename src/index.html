@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+       
     <link rel="stylesheet" href="libs/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/owl.theme.default.css">
     <link rel="stylesheet" href="libs/default.css?v1.1">
@@ -27,20 +28,15 @@
             <div class="header">
                 <div class="container">
                     <nav class="navbar navbar-expand-lg navbar-light ">
-                        <a class="navbar-brand" href="#"><img src="images/job-logo.png" alt=""></a>
+                        <a class="navbar-brand" href="#"><img src="images/logo.svg" class="brand__img" alt=""></a>
 
-
-                        <ul class="navbar-nav ml-auto nav__box">
+                        <ul class="navbar-nav  nav__box">
                             <li class="nav-item nav__item dropdown ">
                                 <a class="nav__link  nav__link--active" href="#" id="navbarDropdown" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Jobs
                                 </a>
-                                <!-- <div class="dropdown-menu  nav__dropdownMenu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Premium</a>
-                                    <a class="dropdown-item" href="#">VIP</a>
-                                    <a class="dropdown-item" href="#">Regular</a>
-                                </div> -->
+
                             </li>
                             <li class="nav-item nav__item dropdown">
                                 <a class="nav__link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -53,21 +49,22 @@
                                     <a class="dropdown-item" href="#">Events</a>
                                 </div> -->
                             </li>
-                            <li class="nav-item nav__item"><a class="nav__link nav__link--border" href=""><i
-                                        class="flaticon-man-user nav__icon"></i>Join</a></li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto nav__box">
+
+                            <li class="nav-item nav__item"><a class="nav__link nav__link--border nav__link--border-new"
+                                    href=""><i class="flaticon-man-user nav__icon"></i>Join</a></li>
                             <li class="nav-item nav__item dropdown">
-                                <a class="nav__link  nav__link--border-gray " href="jobs-search.html"
-                                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
+                                <a class="nav__link  nav__link--border-gray nav__link--border-gray-new"
+                                    href="jobs-search.html" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
                                     <i class="flaticon-old-fashion-briefcase nav__icon"></i> Employer
                                 </a>
-                                <!-- <div class="dropdown-menu nav__dropdownMenu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Join</a>
-                                    <a class="dropdown-item" href="#">Sign up</a>
-                                </div> -->
+
                             </li>
-                            <li class="nav-item nav__item"><a class="nav__link nav__link--border-gray" href="">
-                                    <i class="flaticon-plus nav__icon"></i>Post a Job</a>
+                            <li class="nav-item nav__item">
+                                <a class="nav__link nav__link--border-gray-new nav__link--border-red load-btn" href="#">
+                                    <i class="flaticon-plus nav__icon "></i>Post a Job</a>
                             </li>
                         </ul>
                         <div class="d-flex">
@@ -122,8 +119,24 @@
         <section class="main-categories">
             <div class="container">
                 <div class="main-categories__box">
+                    <!-- NEW NEW NEW START -->
                     <form>
-                        <div class="input-group input__group">
+                        <div class="input-group input__group input__group-new">
+
+
+                            <input type="text" class="form-control form__control--homeSeach-new"
+                                placeholder="Recipient's username" aria-label="Recipient's username"
+                                aria-describedby="button-addon2">
+
+
+
+                            <div class="input-group-append-new">
+                                <button class="  search-btn-new" type="button" id="button-addon2">Find Jobs</button>
+                            </div>
+                        </div>
+                        <!-- <div class="input-group input__group">
+
+
                             <input type="text" class="form-control form__control--homeSeach"
                                 placeholder="Recipient's username" aria-label="Recipient's username"
                                 aria-describedby="button-addon2">
@@ -131,58 +144,206 @@
                                 <button class="  search-btn" type="button" id="button-addon2"><i
                                         class="flaticon-magnifying-glass"></i></button>
                             </div>
+                        </div> -->
+                        <div class="post-resume">
+
+                            <div class="post-resume--div mb-4">
+                                <a href="#" class="post-resume--link">Post your resume </a> <span>-</span>
+                                <p> It only takes a few seconds</p>
+                            </div>
+                            <div class="post-resume--div">
+                                <a href="#" class="post-resume--link">Employers: Get started </a> <span>-</span>
+                                <p> post a job, search resumes, and more</p>
+                            </div>
                         </div>
-                        <div class="text-right mb-10"><a href="#" class="more-vacanse">advanced reseach</a></div>
+                        <!-- POPULAR SEARCHES START -->
+                        <!-- <h2 class="h2  popular-searches--h2">Popular Searches</h2> -->
+                        <!-- <div class="popular-searches__div">
+                            <a href="#"  class="popular-searches__link"><i class="fas fa-search"></i> <p>Higher Education</p></a>
+                            <a href="#"  class="popular-searches__link"><i class="fas fa-search"></i> <p>Freelance</p></a>
+                            <a href="#"  class="popular-searches__link"><i class="fas fa-search"></i> <p>Pharmacy</p></a>
+                            <a href="#"  class="popular-searches__link"><i class="fas fa-search"></i> <p>Navy</p></a>
+                            <a href="#"  class="popular-searches__link"><i class="fas fa-search"></i> <p>Army</p></a>
+                            <a href="#"  class="popular-searches__link"><i class="fas fa-search"></i> <p>High Education</p></a>
+                            <a href="#"  class="popular-searches__link"><i class="fas fa-search"></i> <p>Freelance</p></a>
+                            <a href="#"  class="popular-searches__link"><i class="fas fa-search"></i> <p>Higher Education</p></a>
+                            <a href="#"  class="popular-searches__link"><i class="fas fa-search"></i> <p>Freelance</p></a>
+                            <a href="#"  class="popular-searches__link"><i class="fas fa-search"></i> <p>Pharmacy</p></a>
+                            <a href="#"  class="popular-searches__link"><i class="fas fa-search"></i> <p>Navy</p></a>
+                            <a href="#"  class="popular-searches__link"><i class="fas fa-search"></i> <p>Navy</p></a>
+                            <a href="#"  class="popular-searches__link"><i class="fas fa-search"></i> <p>Army</p></a>
+                        </div>
+
+                        <div class="text-right mb-10"><a href="#" class="more-vacanse">advanced reseach</a></div> -->
+                        <!-- POPULAR SEARCHES END-->
+
                     </form>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="main-categories__group">
-                                <div class="main-categories__item">
-                                    <a href="#" class="main-categories__item--link">IT</a>
-                                </div>
-                                <div class="main-categories__item">
-                                    <a href="#" class="main-categories__item--link">Kend teserrufatlari ve Senaye </a>
-                                </div>
-                                <div class="main-categories__item">
-                                    <a href="#" class="main-categories__item--link">Kend teserrufatlari ve Senaye </a>
-                                </div>
+                    <!-- NEW NEW NEW END -->
+              
+
+                        <div class="main-categories__group-new">
+                            <div class="main-categories__item-new">
+                                <a href="#" class="main-categories__item--link-new">
+                                    <span class="main-categories__name">Maliyyə</span>
+                                    <span class="main-categories__advert">120 iş elanı</span>
+                                    <img src="images/finance.jpg" alt="">
+
+                                </a>
+                            </div>
+                            <div class="main-categories__item-new">
+                                <a href="#" class="main-categories__item--link-new">
+                                    <span class="main-categories__name">İR / Hüquq</span>
+                                    <span class="main-categories__advert">120 iş elanı</span>
+                                    <img src="images/hrlegal.jpg" alt="">
+
+                                </a>
+                            </div>
+                            <div class="main-categories__item-new">
+                                <a href="#" class="main-categories__item--link-new">
+                                    <span class="main-categories__name">İnzibati</span>
+                                    <span class="main-categories__advert">120 iş elanı</span>
+                                    <img src="images/administration.jpg" alt="">
+
+                                </a>
+                            </div>
+                            <div class="main-categories__item-new">
+                                <a href="#" class="main-categories__item--link-new">
+                                    <span class="main-categories__name">Marketinq</span>
+                                    <span class="main-categories__advert">120 iş elanı</span>
+                                    <img src="images/marketing.jpg" alt="">
+
+                                </a>
+                            </div>
+                            <div class="main-categories__item-new">
+                                <a href="#" class="main-categories__item--link-new">
+                                    <span class="main-categories__name">İT / Rəqəmsal</span>
+                                    <span class="main-categories__advert">120 iş elanı</span>
+                                    <img src="images/itdigital.jpg" alt="">
+
+                                </a>
+                            </div>
+                            <div class="main-categories__item-new">
+                                <a href="#" class="main-categories__item--link-new">
+                                    <span class="main-categories__name">Təhsil</span>
+                                    <span class="main-categories__advert">120 iş elanı</span>
+                                    <img src="images/education.jpg" alt="">
+
+                                </a>
+                            </div>
+                            <div class="main-categories__item-new">
+                                <a href="#" class="main-categories__item--link-new">
+                                    <span class="main-categories__name">Satış</span>
+                                    <span class="main-categories__advert">120 iş elanı</span>
+                                    <img src="images/sale.jpg" alt="">
+
+                                </a>
+                            </div>
+                            <div class="main-categories__item-new">
+                                <a href="#" class="main-categories__item--link-new">
+                                    <span class="main-categories__name">Xidmət</span>
+                                    <span class="main-categories__advert">120 iş elanı</span>
+                                    <img src="images/service.jpg" alt="">
+
+                                </a>
+                            </div>
+                            <div class="main-categories__item-new">
+                                <a href="#" class="main-categories__item--link-new">
+                                    <span class="main-categories__name">Müxtəlif</span>
+                                    <span class="main-categories__advert">120 iş elanı</span>
+                                    <img src="images/other.jpg" alt="">
+
+                                </a>
+                            </div>
+                            <div class="main-categories__item-new  main-categories__item-new--last">
+                                <a href="#" class="main-categories__item--link-new">
+                                    <span> See all jobs</span>
+                                    <img src="images/education.jpg" alt="">
+
+                                </a>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="main-categories__group">
-                                <div class="main-categories__item">
-                                    <a href="#" class="main-categories__item--link">Kend teserrufatlari ve Senaye </a>
-                                </div>
-                                <div class="main-categories__item">
-                                    <a href="#" class="main-categories__item--link">Education </a>
-                                </div>
-                                <div class="main-categories__item">
-                                    <a href="#" class="main-categories__item--link">Kend teserrufatlari ve Senaye </a>
-                                </div>
+
+
+
+
+
+                        <div class="main-categories__div">
+                            <div class="main-categories__div--item">
+                                <a href="#" class="main-categories__div--link">
+                                   <img src="images/money.svg" alt="" class="main-categories__div--link">
+                                    <span class="main-categories__div--name">Maliyyə</span>
+                                    <span class="main-categories__fiv--advert">120 iş elanı</span>
+                                </a>
+                            </div>
+                            <div class="main-categories__div--item">
+                                <a href="#" class="main-categories__div--link">
+                                    <i></i>
+                                    <span class="main-categories__div--name">Maliyyə</span>
+                                    <span class="main-categories__fiv--advert">120 iş elanı</span>
+                                </a>
+                            </div> <div class="main-categories__div--item">
+                                <a href="#" class="main-categories__div--link">
+                                    <i></i>
+                                    <span class="main-categories__div--name">Maliyyə</span>
+                                    <span class="main-categories__fiv--advert">120 iş elanı</span>
+                                </a>
+                            </div> <div class="main-categories__div--item">
+                                <a href="#" class="main-categories__div--link">
+                                    <i></i>
+                                    <span class="main-categories__div--name">Maliyyə</span>
+                                    <span class="main-categories__fiv--advert">120 iş elanı</span>
+                                </a>
+                            </div> <div class="main-categories__div--item">
+                                <a href="#" class="main-categories__div--link">
+                                    <i></i>
+                                    <span class="main-categories__div--name">Maliyyə</span>
+                                    <span class="main-categories__fiv--advert">120 iş elanı</span>
+                                </a>
+                            </div> <div class="main-categories__div--item">
+                                <a href="#" class="main-categories__div--link">
+                                    <i></i>
+                                    <span class="main-categories__div--name">Maliyyə</span>
+                                    <span class="main-categories__fiv--advert">120 iş elanı</span>
+                                </a>
+                            </div> <div class="main-categories__div--item">
+                                <a href="#" class="main-categories__div--link">
+                                    <i></i>
+                                    <span class="main-categories__div--name">Maliyyə</span>
+                                    <span class="main-categories__fiv--advert">120 iş elanı</span>
+                                </a>
+                            </div> <div class="main-categories__div--item">
+                                <a href="#" class="main-categories__div--link">
+                                    <i></i>
+                                    <span class="main-categories__div--name">Maliyyə</span>
+                                    <span class="main-categories__fiv--advert">120 iş elanı</span>
+                                </a>
+                            </div> <div class="main-categories__div--item">
+                                <a href="#" class="main-categories__div--link">
+                                    <i></i>
+                                    <span class="main-categories__div--name">See all jobs</span>
+                                    <span class="main-categories__fiv--advert">120 iş elanı</span>
+                                </a>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="main-categories__group">
-                                <div class="main-categories__item">
-                                    <a href="#" class="main-categories__item--link">Sale</a>
-                                </div>
-                                <div class="main-categories__item">
-                                    <a href="#" class="main-categories__item--link">Kend teserrufatlari ve Senaye </a>
-                                </div>
-                                <div class="main-categories__item">
-                                    <a href="#" class="main-categories__item--link">Kend teserrufatlari ve Senaye </a>
-                                </div>
-                            </div>
+
+                    <div class="text-right"><a href="#" class="more-vacanse">See all jobs</a></div>
+
+                    <div class="partners__CategoryWork-new ">
+                        <div class="partners__CategoryWork--People-new ">
+                            <a class="partners__CategoryWork--People--link-new" href="#"><i
+                                    class="fas fa-wheelchair partners__CategoryWork--People--link-new-left"></i>Jobs for
+                                Disabled People <i
+                                    class="fas fa-chevron-right  partners__CategoryWork--People--link-new-right"></i></a>
+                            <a class="partners__CategoryWork--People--link-new" href="#"><i
+                                    class="fas fa-graduation-cap partners__CategoryWork--People--link-new-left "></i>For
+                                Student <i
+                                    class="fas fa-chevron-right  partners__CategoryWork--People--link-new-right"></i>
+                            </a>
+                            <a class="partners__CategoryWork--People--link-new" href="#"><i
+                                    class="fas fa-laptop partners__CategoryWork--People--link-new-left"></i>Freelance <i
+                                    class="fas fa-chevron-right  partners__CategoryWork--People--link-new-right"></i></a>
                         </div>
-                    </div>
-                    <div class="text-right"><a href="#" class="more-vacanse">See all categories</a></div>
-                    <div class="partners__CategoryWork ">
-<div  class="partners__CategoryWork--People ">
-    <a class="partners__CategoryWork--People--link" href="#">Jobs for Disabled People</a>
-    <a class="partners__CategoryWork--People--link" href="#">For Student </a>
-    <a class="partners__CategoryWork--People--link" href="#">For Student </a>
-</div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -191,83 +352,121 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                       
-                        <div class="vacance-Card">
-                            <div class="vacance-Card__vip">
+
+                        <div class=" vacance-Card-new">
+                            <div class="vacance-Card__vip vacance-Card__vip-new">
                                 <i class="vacance-Card__vip--icon flaticon-premium-badge"></i>
                             </div>
-                            <div class="vacance-Card__heart vacance-Card__heart--white " id="myHeart">
+                            <div class="vacance-Card__heart vacance-Card__heart-new" id="myHeart">
                                 <i class="vacance-Card__heart--icon like-unlike flaticon-like"></i>
                             </div>
-                            
-                          <a href="https://app.asana.com/0/1109447177852093/1129717130787734">
-                            <div class="vacance-Card__Text">
-                                <div class="vacance-Card__VacanceName">
-                                    <p>Web Designer</p>
+
+                            <a href="https://app.asana.com/0/1109447177852093/1129717130787734">
+                                <div class="vacance-Card__Text-new">
+                                    <div class="vacance-Card__CompanyName vacance-Card__CompanyName-new">
+                                        <img src="images/avirtellogo.png" alt="">
+                                    </div>
+                                    <div class="vacance-Card__name-group">
+                                        <div class=" vacance-Card__VacanceName-new">
+                                            <p>Web Designer</p>
+                                        </div>
+
+                                        <div class="vacance-Card__Salary-new">
+                                            <p>Əmək haqqı: Razılaşma ilə</p>
+                                        </div>
+                                    </div>
+                                    <div class="vacance-Card__btn-group">
+                                        <div class="vacance-Card__VacanceCity-new">
+                                            <p>Bakı, Azərbaycan</p>
+                                        </div>
+                                        <div class=" vacance-Card__Button-new">
+                                            <button class="myBtn-new"><span class="myBtn-new-span"> Apply
+                                                    Now</span></button>
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div class="vacance-Card__CompanyName">
-                                    <img src="images/Bakcell-logo.png" alt="">
-                                </div>
-                                <div class="vacance-Card__Salary">
-                                    <p>350<span class="azn">M</span>- 1500<span class="azn">M</span></p>
-                                </div>
-                                <div class="vacance-Card__Button">
-                                    <button class="myBtn myBtn-white">APPLY</button>
-                                </div>
-                            </div>
-                          </a>
+                            </a>
                         </div>
-                      
+
                     </div>
                     <div class="col-md-4">
-                        <div class="vacance-Card vacance-Card--darkRed">
-                            <div class="vacance-Card__vip">
+
+                        <div class=" vacance-Card-new">
+                            <div class="vacance-Card__vip vacance-Card__vip-new">
                                 <i class="vacance-Card__vip--icon flaticon-premium-badge"></i>
                             </div>
-                            <div class="vacance-Card__heart vacance-Card__heart--white ">
-                                <i class="vacance-Card__heart--icon flaticon-like"></i>
+                            <div class="vacance-Card__heart vacance-Card__heart-new" id="myHeart">
+                                <i class="vacance-Card__heart--icon like-unlike flaticon-like"></i>
                             </div>
-                            <div class="vacance-Card__Text">
-                                <div class="vacance-Card__VacanceName">
-                                    <p>Web Designer</p>
-                                </div>
-                                <div class="vacance-Card__CompanyName">
-                                    <img src="images/Bakcell-logo.png" alt="">
-                                </div>
-                                <div class="vacance-Card__Salary">
-                                    <p>350<span class="azn">M</span>- 1500<span class="azn">M</span></p>
-                                </div>
-                                <div class="vacance-Card__Button">
-                                    <button class="myBtn myBtn-white">APPLY</button>
-                                </div>
 
-                            </div>
+                            <a href="https://app.asana.com/0/1109447177852093/1129717130787734">
+                                <div class="vacance-Card__Text-new">
+                                    <div class="vacance-Card__CompanyName vacance-Card__CompanyName-new">
+                                        <img src="images/Bakcell_red.png" alt="">
+                                    </div>
+                                    <div class="vacance-Card__name-group">
+                                        <div class=" vacance-Card__VacanceName-new">
+                                            <p>Full-Stack Software Developer</p>
+                                        </div>
+
+                                        <div class="vacance-Card__Salary-new">
+                                            <p>350<span class="azn">M</span> - 1500<span class="azn">M</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="vacance-Card__btn-group">
+                                        <div class="vacance-Card__VacanceCity-new">
+                                            <p>Bakı, Azərbaycan</p>
+                                        </div>
+                                        <div class=" vacance-Card__Button-new">
+                                            <button class="myBtn-new"><span class="myBtn-new-span"> Apply
+                                                    Now</span></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
                         </div>
+
                     </div>
                     <div class="col-md-4">
-                        <div class="vacance-Card">
-                            <div class="vacance-Card__vip">
+
+                        <div class=" vacance-Card-new">
+                            <div class="vacance-Card__vip vacance-Card__vip-new">
                                 <i class="vacance-Card__vip--icon flaticon-premium-badge"></i>
                             </div>
-                            <div class="vacance-Card__heart vacance-Card__heart--white ">
-                                <i class="vacance-Card__heart--icon flaticon-like"></i>
+                            <div class="vacance-Card__heart vacance-Card__heart-new" id="myHeart">
+                                <i class="vacance-Card__heart--icon like-unlike flaticon-like"></i>
                             </div>
-                            <div class="vacance-Card__Text">
-                                <div class="vacance-Card__VacanceName">
-                                    <p>Web Designer</p>
-                                </div>
-                                <div class="vacance-Card__CompanyName">
-                                    <img src="images/Bakcell-logo.png" alt="">
-                                </div>
-                                <div class="vacance-Card__Salary">
-                                    <p>350<span class="azn">M</span>- 1500<span class="azn">M</span></p>
-                                </div>
-                                <div class="vacance-Card__Button">
-                                    <button class="myBtn myBtn-white">APPLY</button>
-                                </div>
 
-                            </div>
+                            <a href="https://app.asana.com/0/1109447177852093/1129717130787734">
+                                <div class="vacance-Card__Text-new">
+                                    <div class="vacance-Card__CompanyName vacance-Card__CompanyName-new">
+                                        <img src="images/imgleft.jpg" alt="">
+                                    </div>
+                                    <div class="vacance-Card__name-group">
+                                        <div class=" vacance-Card__VacanceName-new">
+                                            <p>Web Designer</p>
+                                        </div>
+
+                                        <div class="vacance-Card__Salary-new">
+                                            <p>350<span class="azn">M</span> - 1500<span class="azn">M</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="vacance-Card__btn-group">
+                                        <div class="vacance-Card__VacanceCity-new">
+                                            <p>Bakı, Azərbaycan</p>
+                                        </div>
+                                        <div class=" vacance-Card__Button-new">
+                                            <button class="myBtn-new"><span class="myBtn-new-span"> Apply
+                                                    Now</span></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -289,7 +488,7 @@
                                     <p>Avirdigital Agency</p>
                                 </div>
                                 <div class="vacance-Card__Salary__darkRed">
-                                    <p>350<span class="azn">M</span>- 1500<span class="azn">M</span></p>
+                                    <p>350<span class="azn">M</span> - 1500<span class="azn">M</span></p>
                                 </div>
                                 <div class="vacance-Card__Button">
                                     <button class="myBtn">APPLY</button>
@@ -312,7 +511,7 @@
                                     <p>Avirdigital Agency</p>
                                 </div>
                                 <div class="vacance-Card__Salary__darkRed">
-                                    <p>350<span class="azn">M</span>- 1500<span class="azn">M</span></p>
+                                    <p>350<span class="azn">M</span> - 1500<span class="azn">M</span></p>
                                 </div>
                                 <div class="vacance-Card__Button">
                                     <button class="myBtn">APPLY</button>
@@ -335,7 +534,7 @@
                                     <p>Avirdigital Agency</p>
                                 </div>
                                 <div class="vacance-Card__Salary__darkRed">
-                                    <p>350<span class="azn">M</span>- 1500<span class="azn">M</span></p>
+                                    <p>350<span class="azn">M</span> - 1500<span class="azn">M</span></p>
                                 </div>
                                 <div class="vacance-Card__Button">
                                     <button class="myBtn">APPLY</button>
@@ -468,7 +667,7 @@
                     <div class="card">
                         <div class="row no-gutters">
                             <div class="col-sm-4">
-                                <img src="images/imgleft.jpg"
+                                <img src="images/imgleftnew.png"
                                     class="card__horizontal--img-1 d-none d-md-block d-lg-block d-xl-block" alt="">
                             </div>
                             <div class="col-sm-8">
@@ -577,7 +776,7 @@
                         <a class="partners__CategoryWork--People--link" href="review.html">ALL COMPANIES</a>
                         <a class="partners__CategoryWork--People--link" href="#">COMPANY REVIEW </a>
                     </div>
-                   
+
                 </div>
 
             </div>
@@ -633,19 +832,27 @@
                             <ul class="footer__list">
                                 <!-- <li><span class="footer__list--title">Trainings</span></li> -->
                                 <li><a class="footer__list--link" href="javascript:void(0)">Contact</a></li>
-                                <li><a class="footer__list--link" href="javascript:void(0)">Terms and Conditions</a></li>
+                                <li><a class="footer__list--link" href="javascript:void(0)">Terms and Conditions</a>
+                                </li>
                                 <li><a class="footer__list--link" href="javascript:void(0)">Help & FAQ</a></li>
                             </ul>
                         </div>
                         <div class="footer__row--col">
                             <ul class="footer__list">
-                                <li><a class="footer__list--link" href="javascript:void(0)"><i class="flaticon-close-envelope footer__list--icon"></i>info@jobustan.az</a></li>
-                                <li><a class="footer__list--link" href="javascript:void(0)"><i class="flaticon-phone-receiver footer__list--icon"></i>+994 55 123 45 67</a></li>
+                                <li><a class="footer__list--link" href="javascript:void(0)"><i
+                                            class="flaticon-close-envelope footer__list--icon"></i>info@jobustan.az</a>
+                                </li>
+                                <li><a class="footer__list--link" href="javascript:void(0)"><i
+                                            class="flaticon-phone-receiver footer__list--icon"></i>+994 55 123 45 67</a>
+                                </li>
                                 <li>
                                     <ul class="footer__list">
-                                        <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i class="flaticon-instagram m"></i></a></li>
-                                        <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i class="flaticon-facebook-logo m"></i></a></li>
-                                        <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i class="flaticon-linkedin-logo m"></i></a></li>
+                                        <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i
+                                                    class="flaticon-instagram m"></i></a></li>
+                                        <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i
+                                                    class="flaticon-facebook-logo m"></i></a></li>
+                                        <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i
+                                                    class="flaticon-linkedin-logo m"></i></a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -667,11 +874,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
     <script src="libs/js/owl.carousel.min.js"></script>
     <script src="libs/js/jquery.inputmask.bundle.js"></script>

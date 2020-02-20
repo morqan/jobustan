@@ -217,6 +217,18 @@ select.form-control-lg {
   margin-top: $form-check-input-margin-y;
   margin-left: -$form-check-input-gutter;
 
+  // padding: 0;
+  // height: initial;
+  // width: initial;
+  // margin-bottom: 0;
+  // display: none;
+  // cursor: pointer;
+
+  // display: inline-block;
+  //   vertical-align: middle;
+  //   margin: 5px;
+  //   cursor: pointer;
+
   &:disabled ~ .form-check-label {
     color: $text-muted;
   }
@@ -224,6 +236,11 @@ select.form-control-lg {
 
 .form-check-label {
   margin-bottom: 0; // Override default `<label>` bottom margin
+
+  // display: inline-block;
+  //   vertical-align: middle;
+  //   margin: 5px;
+  //   cursor: pointer;
 }
 
 .form-check-inline {

@@ -1,8 +1,8 @@
-.myBtn{
+.myBtn {
     padding: .8rem 3rem;
     font-size: 1.3rem;
     line-height: 1.2rem;
-    border: 1px solid ;
+    border: 1px solid;
     border-radius: 1rem;
     background-color: transparent;
     color: $color-primary-dark;
@@ -10,10 +10,46 @@
     transition: all .3s;
     box-sizing: border-box;
     text-align: center;
+    &-new {
+      
+        width: 100px;
+        height: 30px;
+        letter-spacing: 0px;
+        font-size: 1.3rem;
+        border: 1px solid $color-pink;
+        border-radius: 20px;
+        background-color: transparent;
+        color: $color-pink;
+        cursor: pointer;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include respond(big-desktop) {
+           width: 120px;
+           font-size: 13px;
+         }
+        &:hover {
+            background-color: $color-pink;
+            color:$color-white;
+        }
+        &-span {
+            transform: translateY(2px);
+
+            @include respond(main-img-resp) {
+                transform: translateY(0px);
+              }
+            
+        }
+    }
+
     @include respond(phone) {
         padding: .8rem 2rem;
-      }
-      &_white{
+    }
+
+    &_white {
         padding: .8rem 3rem;
         font-size: 1.3rem;
         line-height: 1.3rem;
@@ -25,16 +61,20 @@
         transition: all .3s;
         box-sizing: border-box;
         text-align: center;
-      }
-    &:hover{
+    }
+
+    &:hover {
         color: $color-white;
         background-color: $color-primary-dark;
-        border:1px solid transparent;
+        border: 1px solid transparent;
+        transition: all .3s;
     }
-    &:focus{
+
+    &:focus {
         outline: none;
     }
-    &__add{
+
+    &__add {
         border-radius: 50%;
         background-color: $color-primary-dark;
         color: $color-white;
@@ -43,45 +83,54 @@
         width: 6rem;
         height: 6rem;
     }
-    &--primaryDark{
+
+    &--primaryDark {
         background-color: $color-primary-dark;
         border: 1px solid transparent;
         color: $color-white;
-        @include respond(tab-port) {
-            width: 100% ;
-            
-          }
 
-    }  
-    &--gray{
-        
+        @include respond(tab-port) {
+            width: 100%;
+
+        }
+
+    }
+
+    &--gray {
+
         color: $color-gray-dark;
     }
-    &-white{
+
+    &-white {
         color: $color-white;
-        &:hover{
+
+        &:hover {
             background-color: $color-white;
             color: $color-primary-dark;
         }
-    }  
-    &--white{
+    }
+
+    &--white {
         background-color: $color-white;
         border: 1px solid transparent;
         color: $color-primary-dark;
-    } 
-    &--black{
+    }
+
+    &--black {
         background-color: rgba($color: #000000, $alpha: .7);
         border: 1px solid transparent;
         color: $color-gray-dark;
-    }  
-    &--icon{
+    }
+
+    &--icon {
         padding-right: 1rem;
-       
-        &::before{
-            font-size: 2rem!important;
+
+        &::before {
+            font-size: 2rem !important;
         }
-    } 
-    &__accordion{
+    }
+
+    &__accordion {
         color: $color-white;
         font-size: 1.4rem;
         background-color: $color-primary-dark;
@@ -92,46 +141,52 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        &--faq{
+
+        &--faq {
             font-size: 1.8rem;
             background-color: $color-gray-light-1;
             color: $color-gray-dark;
-            &-active{
+
+            &-active {
                 color: $color-white;
                 background-color: $color-primary-dark;
-            }   
+            }
         }
-        &:focus{
+
+        &:focus {
             border: unset;
             box-shadow: unset;
         }
-        &--icon{
+
+        &--icon {
             display: flex;
-            &-faq{
+
+            &-faq {
                 color: $color-primary-dark;
             }
-            
+
         }
-    }  
+    }
 }
 
-.btn__group{
+.btn__group {
     display: flex;
     justify-content: space-between;
-    & > :first-child {
+
+    &> :first-child {
         margin-right: 1.5rem;
-      }
+    }
 }
 
-.search-btn{
-  
+.search-btn {
+
     border-top-left-radius: unset;
     border-bottom-left-radius: unset;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
     border-top: 1px solid;
     border-right: 1px solid;
-    border-bottom: 1px solid ;
+    border-bottom: 1px solid;
     background-color: $color-gray;
     border-color: $color-gray;
     font-size: 1.3rem;
@@ -139,11 +194,30 @@
     color: #fff;
     cursor: pointer;
 
-    &:hover{
+    &-new {
+        border: 1px solid $color-primary-dark;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: $color-primary-dark;
+        font-size: 15px;
+cursor: pointer;
+        color: #fff;
+
+        @include respond(phone-land) {
+            padding: 10px;
+        }
+        @include respond(phone) {
+            padding: 10px;
+            font-size: 13px;
+        }
+    }
+
+    &:hover {
         background-color: $color-primary-dark;
         border-color: $color-primary-dark;
     }
-    &__criterias{
+
+    &__criterias {
         color: $color-white;
         font-size: 1.5rem;
         background-color: $color-primary-dark;
@@ -151,8 +225,11 @@
         border-bottom-right-radius: 1rem;
     }
 
-  }
+}
 
-  .forMyResumeList{
-      margin-right: 1.5rem;
-  }
+.forMyResumeList {
+    margin-right: 1.5rem;
+}
+.load-btn {
+    margin-top: 10px;
+}

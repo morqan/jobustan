@@ -1,0 +1,96 @@
+.qualification {
+    border: 2px solid #fafafa;
+    background-color: #fff;
+    padding: 2rem;
+    font-size: 16px;
+    border-radius: 5px;
+    border-top: 3px solid $color-primary-dark;
+
+    &__title {
+        font-size: 11px;
+        margin: 10px 0;
+    }
+
+    &__h2 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+    }
+
+    &__div {
+
+
+        &--item {
+            position: relative;
+            padding: 2rem;
+            border: 1px solid $color-primary-dark;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        &--top {
+            display: flex;
+            align-items: center;
+        }
+        &--bottom{
+            padding-top: 20px;
+        }
+
+        .switch-block {
+            width: 300px;
+            span {
+                border-radius: 20px;
+            }
+        }
+
+        
+    }
+
+    &--remove-btn {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        font-size: 20px;
+        padding: 0 5px;
+        cursor: pointer;
+    }
+
+    &__questions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+
+        &--item {
+            border: 1px solid $color-primary-dark;
+            border-radius: 20px;
+            padding: 5px 10px;
+            color: $color-primary-dark;
+            cursor: pointer;
+        }
+    }
+}
+
+.iq-experienceYears {
+    padding: .5rem 2rem .5rem 1rem;
+}
+
+
+  .switch-light.switch-candy input ~ span span:first-child,
+  .switch-light.switch-candy input:checked ~ span span:nth-child(2),
+  .switch-candy input:checked + label {
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
+  .switch-candy a {
+    border: 1px solid #333;
+    border-radius: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.45);
+    background-color: $color-primary-dark;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), transparent); }
+  .switch-candy-blue a {
+    background-color: #38a3d4; }
+  .switch-candy-yellow a {
+    background-color: #f5e560; }
+    .switch-toggle.switch-candy, .switch-light.switch-candy > span {
+        background-color: #ddcbd2;
+       
+    }

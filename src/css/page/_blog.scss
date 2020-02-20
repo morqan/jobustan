@@ -1,8 +1,15 @@
-.blog{
+.blog {
     margin-top: -10rem;
     margin-bottom: 5rem;
-    &__links{
+
+    &__links {
         height: 5rem;
+
+        a {
+            background-color: $color-primary-dark;
+            color: $color-white;
+            border-color: $color-primary-dark;
+        }
     }
 }
 
@@ -11,31 +18,107 @@
     padding: 17rem 0;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
-.__pagination{
+.__pagination {
     justify-content: center;
-    margin-top: 2.5rem   
+    margin-top: 2.5rem
 }
-.page__link{
+
+.page__link {
     border: unset;
     color: $color-gray;
     font-size: 1.5rem;
     margin-left: 1px;
     padding: .5rem 1.2rem;
-    &:hover{
+
+    &:hover {
         background-color: transparent;
         color: $color-gray;
-        
+
     }
-    &--active{
+
+    &--active {
         background-color: $color-primary-dark;
         border-radius: 50%;
         color: $color-white;
     }
 }
 
-.subscribe--icon::before{
+.subscribe--icon::before {
     margin-right: 1rem;
+}
+
+.my-pagination {
+
+    &:first-of-type,
+    &:last-of-type {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &__item {
+        background-color: #fff;
+
+        &:not([class*="page__link--active"]) a:focus,
+        :not([class*="page__link--active"]) a:active {
+            box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .25);
+            border-left-width: 1px;
+        }
+
+        //   &:first-of-type a,
+        //   &:last-of-type a{
+        //   padding: ;
+        //   }
+
+        &:first-child > a,
+        &:last-child > a  {
+          min-width: 70px;
+          border-radius: 40px;
+        }
+
+    }
+
+    .active {
+        background-color: $color-primary-dark;
+        min-width: 40px;
+        min-height: 40px;
+        text-align: center;
+        padding-top: 1.7rem;
+    }
+
+    &__link {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        text-decoration: none;
+        border: 1px solid rgba(0, 0, 0, .25);
+        border-left-width: 0;
+        min-width: 40px;
+        min-height: 40px;
+        color: #fff;
+        box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, .35);
+        background: #fff;
+        border: 2px solid #fde5ee;
+
+        &:first-of-type {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        //   &:first-child ,
+        //   &:last-child {
+        //    width:70px;
+        //   }
+        &:hover {
+            background-color: $color-primary-dark;
+            border-color: $color-primary-dark;
+            box-shadow: none;
+            color: #fff;
+            transition: all .3;
+        }
+    }
 }
