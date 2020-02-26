@@ -7,11 +7,115 @@
     background-repeat: no-repeat, no-repeat;
     background-size: 10%;
 
-    &__div{
+    &__div {
         width: 100%;
-        &--item {
-            width: 33%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 30px;
+
+        &--name {
+            font-size: 14px;
+            color: #494446;
+            font-weight: bold;
         }
+
+        &--advert {
+            font-size: 12px;
+            color: #494446;
+        }
+
+        &--item {
+            width: 25%;
+
+            @include respond(main-img-resp) {
+                width: 50%;
+            }
+
+            @include respond(main-img-resp-1) {
+                width: 100%;
+                margin-bottom: 10px;
+                border: none;
+            }
+
+            &:not(:nth-child(4n +4)){
+                border-right: 1px solid #f6f6f6;
+                @include respond(main-img-resp) {
+                    border-right:none;
+                }
+            }
+
+            &:not(:nth-child(-n +4)){
+                border-top: 1px solid #f6f6f6;
+                @include respond(main-img-resp) {
+                    border-top:none;
+                }
+            }
+
+            
+            &:not(:nth-child(2n + 2)){
+                @include respond(main-img-resp) {
+                    border-right: 1px solid #f6f6f6;
+                }
+                @include respond(main-img-resp-1) {
+                   
+                    border: none;
+                }
+            }
+
+            &:not(:nth-last-child(n+7)){
+                @include respond(main-img-resp) {
+                    border-top: 1px solid #f6f6f6;
+                }
+                @include respond(main-img-resp-1) {
+                   
+                    border: none;
+                }
+            }
+
+            &-last {
+                display: none;
+
+                @include respond(main-img-resp) {
+                    display: block;
+                }
+            }
+        }
+
+        &--link {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            transition: all .5s;
+
+            &:hover {
+                background-color: $color-primary-dark;
+                // box-shadow: 0px 10px 25px -6px rgba(0, 0, 0, 0.15) !important;
+                transition: all .5s;
+            }
+
+            &:hover svg {
+                fill: #fff;
+                transition: all .5s;
+            }
+
+            &:hover span {
+                color: #fff;
+                transition: all .5s;
+            }
+        }
+
+
+        svg {
+            width: 50px;
+            height: 50px;
+            fill: $color-primary-dark;
+            margin-bottom: 18px;
+
+        }
+
     }
 
     &-new {
@@ -90,7 +194,7 @@
             &::after {
                 display: block;
                 position: relative;
-            
+
                 margin-top: -150px;
                 height: 150px;
                 width: 100%;
@@ -98,9 +202,9 @@
                 border-radius: 20px;
 
 
-              
+
                 background-image: linear-gradient(to right, #00000008 0, transparent 100%);
-    
+
 
             }
 
@@ -108,7 +212,7 @@
                 z-index: 1;
                 transition: all .8s cubic-bezier(.25, .8, .25, 1);
                 cursor: pointer;
-                
+
                 // box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
                 border-color: #ffffff;
                 margin-top: -10px;
@@ -196,13 +300,13 @@
                 &::after {
                     display: block;
                     position: relative;
-                    background-image: linear-gradient(to left, rgba(0,0,0,0.3) -26.48%, rgba(0,0,0,0.4) 73.52%);
+                    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.3) -26.48%, rgba(0, 0, 0, 0.4) 73.52%);
                     margin-top: -150px;
                     height: 150px;
                     border-radius: 20px;
                     width: 100%;
                     content: '';
-                  }
+                }
 
                 &:hover img {
                     // transform: scale(1.08);
@@ -225,7 +329,7 @@
                     z-index: 1;
 
 
-                   
+
                 }
 
 
@@ -290,10 +394,13 @@
     &--img {
         margin-bottom: 3rem;
 
+        height: 60px;
+        margin-top: 20px;
+
         &-1 {
             width: 100%;
             height: 100%;
-           
+
         }
     }
 
@@ -436,12 +543,23 @@
     font-size: 1.4rem;
     color: $color-gray;
 
-    @include respond(main-img-resp) {
-        display: none;
-    }
+
+    display: inline-block;
+    border: 2px solid $color-primary-dark;
+   
+    border-radius: 8px;
+    padding: 10px 40px;
+
+    font-size: 15px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+
 
     &:hover {
-        color: $color-primary-dark;
+        // color: $color-primary-dark;
+        background-color: $color-primary-dark;
+        color: #fff;
+        transition: all .3s;
     }
 }
 
@@ -551,7 +669,7 @@
                         border-radius: 5px;
                         transition: all .2s;
                         width: 32%;
-                      display: inline-block;
+                        display: inline-block;
                         position: relative;
 
                         &:hover {
@@ -567,7 +685,7 @@
 
                         @include respond(big-desktop) {
                             font-size: 13px;
-                    
+
                             padding: 1.5rem 2rem;
                         }
 
@@ -591,6 +709,12 @@
                             margin-bottom: 1rem;
                             width: 49%;
                         }
+
+                        @include respond( main-img-resp) {
+                            width: 49%;
+                        }
+
+                       
 
                         @include respond(main-img-resp-1) {
                             width: 100%;

@@ -1,16 +1,19 @@
 .footer{
-  background-color: $color-black;
+  background-color: $color-white;
   padding: 7rem 0 4rem 0;
   margin-bottom: -2rem;
 
   &__c{
     color: $color-gray-light-2;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     margin-top: 2rem;
   }
 
   &__logo{
     margin-bottom: 2rem;
+     img{
+       width: 170px;
+     }
   }
   &__row{
     display: flex;
@@ -62,7 +65,7 @@
     }
     &--link{
       font-size: 1.5rem;
-      color: $color-white;
+      color: $color-black;
       @include respond(desktop) {
         &:hover{
           color: $color-primary-dark;
