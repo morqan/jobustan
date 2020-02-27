@@ -1,4 +1,4 @@
-.form__control{
+.form__control {
     background-color: transparent;
     border: 1px solid $color-gray-light-2;
     color: $color-gray-dark;
@@ -6,110 +6,172 @@
     padding: 1.2rem 2rem;
     font-size: 1.4rem;
     margin-bottom: 1.5rem;
-    &::placeholder{
+
+    &::placeholder {
         color: $color-gray-light-2;
     }
 
     &:focus {
         color: $color-gray-dark;
         background-color: transparent;
-        box-shadow:unset;
-        border-color:$color-gray-dark!important;
+        box-shadow: unset;
+        border-color: $color-gray-dark !important;
         outline: 0px;
     }
 
-    &--homeSeach{
+    &--homeSeach {
         border: unset;
         background-color: $color-gray-light-5;
         padding: 1rem 2rem;
         font-size: 1.3rem;
         border-radius: 1rem;
-        &:focus{
-            outline:unset;
-            box-shadow:unset;
+
+        &:focus {
+            outline: unset;
+            box-shadow: unset;
             border-color: unset;
             border: none;
             background-color: $color-gray-light-5;
-            
+
+        }
+
+        &-new {
+            border-radius: 0.5rem;
+            border: 1px solid #d6d6d6;
+            padding: 10px 20px;
+            background-repeat: no-repeat;
+            background-size: 26px 26px;
+            position: relative;
+            background-image: url(images/magnify.png) no-repeat scroll 7px 7px;
+            padding-left: 30px;
+            font-size: 15px;
+            border-radius: 10px !important;
+
+            @include respond(phone-land) {
+                padding: 10px;
+            }
+
+            @include respond(phone) {
+                padding: 10px;
+                font-size: 13px;
+            }
+
+            &::placeholder {
+                font-size: 15px;
+                line-height: 20px;
+
+                @include respond(phone-land) {
+                    padding-left: 10px;
+                }
+
+                @include respond(phone) {
+                    padding-left: 10px;
+                    font-size: 13px;
+                }
+
+            }
+
         }
     }
 
+
+
 }
 
-.input__group{
+.input__group {
     padding: 6rem 0 2rem 0;
+
+    &-new {
+        width: 70%;
+        margin: 0 auto;
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+
+        @include respond(main-img-resp-1) {
+            width: 100%;
+            padding: 3rem 0 2rem 0;
+        }
+
+       
+    }
 }
 
 
 
 
 .form {
-   
+
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
-    @include respond(phone) {
-            
-        display: block;
-      }
 
-      &__customLabel{
-        border-bottom: 1px solid#ddd;        
-        margin-bottom: unset;        
-        font-size: 1.6rem;        
+    @include respond(phone) {
+
+        display: block;
+    }
+
+    &__customLabel {
+        border-bottom: 1px solid#ddd;
+        margin-bottom: unset;
+        font-size: 1.6rem;
         line-height: 4.1rem;
-        width: 100%;        
-        color: transparent;        
+        width: 100%;
+        color: transparent;
         position: absolute;
         top: 0;
         left: 0;
-      }
-      &__customInpTitle{
-          position: absolute;
-          top: 2rem;
-          left: 0;
-          font-size: 1.5rem;
-          transition: all .3s;
-          color: $color-gray;
+    }
 
-          &--label{
+    &__customInpTitle {
+        position: absolute;
+        top: 2rem;
+        left: 0;
+        font-size: 1.5rem;
+        transition: all .3s;
+        color: $color-gray;
+
+        &--label {
             top: 0;
             font-size: 1.2rem;
             font-weight: 700;
             color: $color-black;
-          }
-      }
+        }
+    }
 
-      &__customInput{
-          height: 4.2rem;
-          cursor: pointer;
-      }
+    &__customInput {
+        height: 4.2rem;
+        cursor: pointer;
+    }
 
-      &__customFile{
+    &__customFile {
         position: relative;
         line-height: 0;
         margin: .5rem 1rem;
-        
+
     }
-      
-    &__textarea{
+
+    &__textarea {
         width: 100%;
         height: 15rem;
         border: 1px solid #ddd;
         font-size: 1.6rem;
         padding: 1rem;
     }
-    &__radio-group
-    {
+
+    &__radio-group {
         font-size: 1.4rem;
     }
-    &__group{
+
+    &__group {
         line-height: 0;
-       margin: .5rem 1rem;
+        margin: .5rem 1rem;
     }
-    &__group-box{
-       flex-basis: 100%;
-       
+
+    &__group-box {
+        flex-basis: 100%;
+
     }
 
     &__input {
@@ -125,13 +187,16 @@
         width: 100%;
         display: block;
         transition: all .3s;
-        &--white{
+
+        &--white {
             color: $color-white;
+
             &::placeholder {
                 color: $color-gray;
             }
-            &::-moz-placeholder { 
-                color: $color-gray;   
+
+            &::-moz-placeholder {
+                color: $color-gray;
                 opacity: 1;
             }
         }
@@ -147,8 +212,9 @@
         &::placeholder {
             color: $color-gray;
         }
-        &::-moz-placeholder { 
-            color: $color-gray;   
+
+        &::-moz-placeholder {
+            color: $color-gray;
             opacity: 1;
         }
     }
@@ -161,10 +227,10 @@
         display: block;
         transform: translateY(-5rem);
         transition: all .3s;
-        
+
     }
 
-    &__input:placeholder-shown + &__label {
+    &__input:placeholder-shown+&__label {
         opacity: 0;
         visibility: hidden;
         transform: translateY(-4rem);
@@ -177,11 +243,12 @@
         display: block;
         transform: translateY(-18.5rem);
         transition: all .3s;
-        
-        
+
+
     }
-    &__area{
-        
+
+    &__area {
+
         height: 15rem;
         border: 1px solid #ddd;
         font-size: 1.6rem;
@@ -192,11 +259,13 @@
         background-color: transparent;
         display: block;
         transition: all .3s;
-        &:focus{
+
+        &:focus {
             outline: unset;
         }
     }
-    &__area:placeholder-shown + &__label-area {
+
+    &__area:placeholder-shown+&__label-area {
         opacity: 0;
         visibility: hidden;
         transform: translateY(-14rem);
@@ -207,25 +276,25 @@
 }
 
 
-.clearValue{
+.clearValue {
     z-index: 5;
 }
 
 .form-control:focus {
-    
-     border-color: #ced4da;
-     outline: none;
-     box-shadow: unset;
+
+    border-color: #ced4da;
+    outline: none;
+    box-shadow: unset;
 }
 
-.form__check__input{
+.form__check__input {
     width: 1.5rem;
     height: 1.5rem;
     margin-top: 0;
 }
 
 
-.form__check__label{
+.form__check__label {
     font-size: 1.4rem;
     color: $color-gray;
     padding-left: 1rem;
@@ -234,9 +303,10 @@
     cursor: pointer;
 }
 
-.choose{
+.choose {
     position: relative;
-    &__img{
+
+    &__img {
         border-radius: 50%;
         width: 5rem;
         position: absolute;
@@ -255,22 +325,164 @@
 //     -moz-appearance: textfield;
 //     appearance: textfield;
 //     margin: 0; 
-    
+
 
 //   }
-  input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-  -moz-appearance:textfield;
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield;
 }
-input[type=number]
- {
-  
-  -moz-appearance:textfield;
+
+input[type=number] {
+
+    -moz-appearance: textfield;
 }
-input[type=checkbox]
- {
-  
-  cursor: pointer;
+
+input[type=checkbox] {
+
+    cursor: pointer;
+}
+
+.form-check {
+    &__input {
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer;
+
+
+        &:checked+.form-check__label::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 2px;
+            left: 7px;
+            width: 5px;
+            height: 11px;
+            border: solid $color-primary-dark;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+
+    &__label {
+        position: relative;
+        cursor: pointer;
+        padding-left: 0;
+        margin-top: 0;
+
+        &::before {
+            content: '';
+            -webkit-appearance: none;
+            background-color: transparent;
+            border: 2px solid $color-primary-dark;
+            border-radius: 5px;
+            // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+            padding: 7px;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+    }
+}
+
+.form-control__search {
+    padding: .6rem;
+    font-size: 12px;
+}
+
+.input-group-append-new {
+    margin-left: 1rem;
+}
+
+.post-resume {
+    margin-top: 20px;
+
+    &--div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+
+        @include respond(main-img-resp-1) {
+         justify-content: flex-start;
+        }
+    }
+
+    &--link {
+        font-size: 16px;
+        color: $color-primary-dark;
+        font-weight: bold;
+
+        span {
+            color: $color-gray;
+            margin-left: 5px;
+        }
+        
+        @include respond(main-img-resp-1) {
+          font-size: 15px;
+           }
+    }
+
+
+}
+
+.popular-searches {
+    &--h2 {
+        text-align: center;
+        margin: 40px auto 20px;
+        font-weight: bold;
+        font-size: 24px;
+
+        @include respond(main-img-resp-1) {
+            font-size: 18px;
+             }
+    }
+
+    &__div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 1rem auto;
+        &::after {
+            content: "";
+            flex: auto;
+          }
+    }
+
+    &__link {
+        padding: 10px 15px;
+        background-color: #ececec;
+        border-color: transparent;
+        color: #2d2d2d;
+        font-size: 15px;
+        border: 0;
+        align-items: center;
+        margin: 5px;
+        border-radius: 10px;
+        word-wrap: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond(main-img-resp-1) {
+            padding: 8px 12px;
+             }
+       
+        .fa-search {
+            color: #b1b1b1;
+            font-size: 17px;
+        }
+
+        p {
+            margin-left: 5px;
+            width: 100%;
+        }
+    }
 }

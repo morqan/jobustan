@@ -58,6 +58,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
 	@if $breakpoint == tab-port2 {
         @media only screen and (min-width: 900px) and (max-width: 991px) { @content };     
 	}
+	@if $breakpoint == tab-port3 {
+        @media only screen and (min-width: 900px) and (max-width: 1000px) { @content };     
+	}
 	@if $breakpoint == ipad-pro {
         @media only screen and (min-width: 900px) and (max-width: 1200x) { @content };   
 	}
@@ -75,6 +78,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
     }
     @if $breakpoint == big-desktop {
         @media only screen and (min-width: 1800px) { @content };    //1800
+	}
+	@if $breakpoint == big-screen {
+        @media only screen and (min-width: 1200px) { @content };    //1800
     }
 }
 
